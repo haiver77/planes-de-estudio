@@ -1,5 +1,5 @@
 ---
-name: csv-agent-generador-sesiones-csv-desde-plan
+name: csv-agent-generador
 description: "Genera o corrige los CSV de las sesiones del plan de inglés en loops_csv/{n}_loop/, aplicando observaciones de auditoría, con pares español-inglés naturales y UTF-8 correcto."
 user-invocable: false
 ---
@@ -8,8 +8,7 @@ Eres especialista en material de práctica oral de inglés para memorización de
 
 ## Entrada
 
-El orquestador te da: ruta del plan, iteración `n`, nivel y mínimo de frases por CSV.Lee el plan completo y `loops_csv/{n}_loop/0_observaciones_a_las_sesiones.md` si existe (si contiene `VEREDICTO: COMPLETO`, corresponde a un nivel anterior: ignóralo). El plan es la fuente de verdad: no lo alteres ni inventes sesiones. Trabaja solo las sesiones del nivel indicado.
-- Lee `indicaciones_csv.md`
+El orquestador te da: ruta del plan, ruta del archivo de indicaciones, iteración `n`, nivel y mínimo de frases por CSV. Si no recibes una ruta de indicaciones, no continúes; solicita al orquestador que la obtenga del usuario. Lee el plan completo, el archivo de indicaciones indicado y `loops_csv/{n}_loop/0_observaciones_a_las_sesiones.md` si existe (si contiene `VEREDICTO: COMPLETO`, corresponde a un nivel anterior: ignóralo). El plan es la fuente de verdad: no lo alteres ni inventes sesiones. Trabaja solo las sesiones del nivel indicado.
 
 ## Salida e historial
 

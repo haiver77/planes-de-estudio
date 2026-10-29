@@ -1,6 +1,7 @@
 # Consideraciones para el diseño de las sesiones (CSV)
 
 ## Orden, Progresion y repetición.
+
 ## Cuando el Vocabulario Foco son Frases (No palabras individuales)
 Presentar el vocabulario objetivo uno por uno, comenzando por el vocabulario foco independiente cuando sea gramaticalmente apropiado, luego continuar con ejemplos simples y consolidarlo mediante repeticiones que  pueden crear en tamaño gradualmente y tener distintos contextos antes de introducir un nuevo vocabulario foco.
 
@@ -41,3 +42,19 @@ Ejemplo de frase incorrecta (El usuario no sabe que pronombre usar para la tradu
 Frase correcta (Pronombre en español 'ellos'): ```El jueves por la noche, Ellos llegan al mismo tiempo.;On Thursday evening, they arrive at the same time.```
 Frase incorrecta: ```El jueves por la noche, llegan al mismo tiempo.;On Thursday evening, they arrive at the same time.```
 
+
+## Progresión correcta
+Si por ejemplo la frase del vocabulario foco es "A bit", entonces está bien que se introduzca primero la frase y luego se vaya incluyendo más información y vocabulario, como por ejemplo:
+```
+Un poco;A bit
+Estoy un poco cansado.;I am a bit tired.
+Hace un poco de frío.;It is a bit cold.
+La tienda está un poco lejos.;The shop is a bit far away.
+```
+
+## No incluir la expresión de ingles en la frase en español
+No está bien incluir el vocabulario foco del ingles en la frase en español, como por ejemplo:
+```
+Leo la expresión «at home» en la página.;I read the phrase “at home” on the page.
+Mi profesor explica la expresión «at school» después de clase.;My teacher explains the phrase “at school” after class.
+```
