@@ -1,0 +1,13 @@
+Revisión: PF-A1-001 — `frases_PF-A1-001_v1.csv` (A1)
+
+Comprobaciones objetivas: el archivo se decodifica como UTF-8 válido; tiene exactamente 150 filas no vacías, 2 campos por fila, sin encabezado ni errores de análisis CSV. No se detectaron campos con punto y coma, filas adicionales, caracteres de reemplazo ni secuencias de mojibake. Se confirma cobertura de los 10 focos del plan, con 15 filas por foco, y se alcanza el mínimo de 150.
+
+Observaciones pendientes (prioridad alta a media):
+
+1. **Alta — fila 74, pronombre explícito.** `¿Por qué comete errores cuando está cansada?;Why does she make mistakes when she is tired?` En español, `comete/está` también puede referirse a usted y no identifica explícitamente a “she”. Cambiar a una formulación con `ella`, por ejemplo: `¿Por qué ella comete errores cuando está cansada?`.
+
+2. **Media — fila 86, español idiomático.** `Ella se asegura de que su hijo come el desayuno.` La expresión `comer el desayuno` suena calcada del inglés. Sustituir por `Ella se asegura de que su hijo desayuna.` (o `...se toma el desayuno`) y mantener una traducción inglesa equivalente.
+
+3. **Media — fila 132, acepción/colocación de “take part”.** `Mis amigos participan en el club después de clase.;My friends take part in the club after class.` La frase española sugiere pertenencia al club más que participación en una actividad. Cambiar para explicitar las actividades, por ejemplo: `Mis amigos participan en las actividades del club después de clase.;My friends take part in the club activities after class.`
+
+4. **Media — gramática por encima del alcance A1 declarado.** Fila 30 contiene `cuando camines` (subjuntivo en subordinada temporal); filas 63 y 71 usan imperativos negativos (`No cometas`), que requieren formas de subjuntivo y no son necesarios para el foco `make a mistake`; fila 90 usa `esté` en subjuntivo. El plan limita esta sesión a presente/pasado simple e imperativos solo cuando el foco los requiera. Reescribir estas filas con presente/pasado simple o infinitivo A1, por ejemplo: fila 30 `El turista se pierde en el centro de la ciudad.;The tourist gets lost downtown.`; fila 63 `No cometo errores en clase.;I do not make mistakes in class.`; fila 71 `Ana no cometió el mismo error otra vez.;Ana did not make the same mistake again.`; fila 90 `Nos aseguramos de tener la comida lista antes de la cena.;We make sure to have the food ready before dinner.`

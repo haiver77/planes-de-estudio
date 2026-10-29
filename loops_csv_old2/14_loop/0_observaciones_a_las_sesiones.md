@@ -1,0 +1,43 @@
+# Informe de auditoría lingüística y técnica — A1-S001 a A1-S005, iteración global 13
+
+**Resultado: requiere correcciones; se necesita otra iteración.** Alcance exclusivo: `loops_csv/13_loop/A1/A1-S001.csv` a `A1-S005.csv`. Se cotejaron `indicaciones_csv.md`, el plan aprobado de `loops_plan/11_loop/1_plan_estudio_por_sesiones_de_repeticion.md`, el catálogo de `loops_plan/11_loop/2_catalogo_trazabilidad_fuentes.csv`, las nueve observaciones del informe de iteración 13 y los antecedentes relevantes disponibles. No se revisó ningún otro CSV ni `loops_csv_old`.
+
+## Evidencia técnica y de cobertura
+
+- Los cinco archivos solicitados existen y son los cinco IDs dentro del alcance. Cada uno se leyó desde bytes con decodificación UTF-8 estricta. Recuentos: S001 12 984 bytes; S002 12 606; S003 12 345; S004 13 132; S005 13 122. No tienen BOM ni errores de decodificación.
+- Cada archivo contiene exactamente 150 registros CSV válidos y 150 pares, sin encabezado: dos campos no vacíos separados por `;`; no hay filas vacías, campos adicionales, comillas mal cerradas ni saltos de línea incrustados. El salto de línea final del archivo no se contó como registro. No se usa la coma como delimitador.
+- No se encontraron secuencias de mojibake (`Ã¡`, `Ã±`, etc.), U+FFFD ni letras sustituidas por `?`. Las preguntas españolas revisadas tienen `¿` de apertura y `?` de cierre; las tildes, diéresis y `ñ` son caracteres UTF-8 válidos.
+- No hay pares español–inglés duplicados literalmente dentro de un archivo ni entre estos cinco archivos. Sí persisten las repeticiones contextuales señaladas en las observaciones pendientes.
+- Los primeros 60 registros de cada sesión corresponden a 12 unidades nuevas del catálogo, con cinco ejemplos por unidad (12 × 5). Se verificaron también los eventos de repaso previstos y la cobertura explícita de *each other* en S005-41–45.
+- Distribución física cotejada con el plan: S001 60 nuevos + 0 repaso programado + 30 filas del bloque gramatical + 60 de integración; S002 y S003 60 + 12 + 30 + 48; S004 y S005 60 + 24 + 30 + 36. Todos los archivos suman 150 pares. Los defectos de gramática indicados abajo son de contenido de algunas filas asignadas al bloque, no de recuento total.
+- Repasos presentes: S002-61–72 recupera 12/12 unidades de S001; S003-61–72, 12/12 de S002; S004-61–72, 12/12 de S003, y S004-73–84, 12/12 de S001; S005-61–72, 12/12 de S004, y S005-73–84, 12/12 de S002.
+
+## Observaciones pendientes priorizadas
+
+### Prioridad alta — objetivos gramaticales, transferencia y equivalencia
+
+1. **A1-S003, filas 97–102 — el bloque G03 no contiene 30 pares que practiquen el foco.** El plan reserva las filas 73–102 para *have got/has got* y adjetivos posesivos. Las filas 97–98 son solo la afirmación y la negación de “you have got a small dog” (falta la interrogativa); 99 (`En el mercado, ese es un libro`) y 100 (`Buscamos estos libros en la biblioteca`) practican demostrativos, no G03; 101 sí practica *has got*; 102 (`Estos son mis cuadernos`) vuelve a demostrativos. **Cambio requerido:** sustituye 99, 100 y 102 por ejemplos de G03 con posesivos y contextos distintos; completa en 99 la pregunta correspondiente a 97–98 y usa las otras filas para ejemplos adicionales de *have got/has got*. Mantén las 30 filas gramaticales dentro de 73–102 y el total de 150.
+
+2. **A1-S005, filas 107–109 y 111–113 — seis filas del bloque asignado a G05 no practican el objetivo.** El bloque previsto es 85–114 (30 pares); 107–109 son ejemplos de demostrativos (“These eggs…”, “That umbrella…”, “This umbrella…”), y 111–113 son rutinas con presente simple (caminar al trabajo, tomar té, conducir al trabajo). No practican *there is/are* ni los cuantificadores *some/any, much/many, a lot of*. **Cambio requerido:** reemplaza esas seis filas por ejemplos autónomos y variados de G05, distribuyendo afirmativas, negativas y preguntas y combinando cantidades contables/no contables; conserva las cantidades del plan y las 36 filas de integración posteriores.
+
+3. **A1-S002, fila 32 — equivalencia léxica incorrecta.** `La gente escucha la música de ese grupo en todo el mundo.;People hear that band's music all over the world.` *Escuchar* expresa atención voluntaria; *hear* normalmente expresa percepción involuntaria. **Cambio requerido:** usa `People listen to that band's music all over the world.` o cambia el español a una frase equivalente a *hear*.
+
+4. **A1-S002, fila 64 — persiste el mismo microcontexto de introducción.** `La casa tiene unos cuantos años, pero sigue en buen estado.` repite el contexto y la proposición de S001-17 (`La casa tiene algunos años.` / “The house is a few years old”), añadiendo solo una cláusula. **Cambio requerido:** conserva la unidad *a few years*, pero aplícala a una situación realmente distinta; no vuelvas a describir la edad de la misma clase de objeto/edificio.
+
+5. **A1-S002, filas 46–50; A1-S003-70; A1-S005-82 — persiste el uso repetitivo y a veces rígido de *a period of time*.** Las cinco filas nuevas de S002 repiten la misma plantilla; algunas son suficientemente concretas, pero S002-46 y S002-49 dejan el intervalo genérico, y S002-48 resulta literal (`needs a period of time to recover`; es más natural `needs time to recover`). S003-70 y S005-82 también usan intervalos sin precisar; en S005-82, la formulación `measures the river level for a period of time after heavy rain` suena poco idiomática para una observación que se desarrolla a lo largo del tiempo. **Cambio requerido:** conserva la unidad donde corresponda, pero varía las construcciones y situaciones, usa formulaciones idiomáticas (`for a specified period`, `over a period of time`, etc.) y concreta el periodo cuando el contexto lo permita; no uses la expresión como relleno temporal repetido.
+
+6. **A1-S003, fila 68 — traducción poco idiomática y pregunta no dirigida.** `¿Es necesario algo más para preparar la cena?;Is anything else necessary to make dinner?` se entiende, pero la formulación inglesa es rígida y suena impersonal. **Cambio requerido:** usa una pregunta directa y natural, por ejemplo `Do we need anything else to make dinner?`, con español equivalente.
+
+7. **A1-S005, fila 16 — petición de permiso poco natural.** `¿Está bien entrar en la sala, por favor?;Is it all right to come into the room, please?` suena literal y no formula una petición idiomática en ninguna de las dos lenguas. **Cambio requerido:** reformula como solicitud cortés y equivalente, por ejemplo `¿Puedo pasar a la sala, por favor?;May I come into the room, please?`.
+
+### Prioridad media — repaso y transferencia contextual
+
+8. **A1-S005, fila 117 frente a A1-S001-11 — repetición del marco mensual.** `El club de ajedrez se reúne varias veces al mes en la biblioteca.` repite prácticamente la misma combinación de frecuencia y periodo que `Visito a mi tía varias veces al mes.`; cambiar la persona y la actividad no basta para una transferencia contextual distinta. **Cambio requerido:** conserva la unidad *a few times*, pero sitúala en otro marco temporal o funcional, sin volver a “varias veces al mes”.
+
+## Revisión expresa de las observaciones recibidas
+
+- Se verificaron las nueve observaciones del informe anterior. Quedan pendientes los microcontextos de S002-64, las construcciones de *a period of time* y la transferencia mensual de S005-117, además de los problemas gramaticales y lingüísticos detallados arriba.
+- Se consideran corregidos en esta iteración: la pregunta de menú S002-37; el contexto del mostrador de información S002-41; los ejemplos de repaso S003-65/66/72 y S005-63/65/67/70/72 y S005-74/75/80/82/83; las parejas exactas señaladas anteriormente; la cobertura de *each other* en S005-45; la explicitación del concierto en S003-66; la causa de S004-28; y la equivalencia de S001-145 (`apenas` / `only`).
+- También se revisaron las observaciones históricas aún pertinentes: las filas de entrada en pasado S005-21–25 ya usan personas, espacios y situaciones diferenciados; las traducciones de S005-80 y S005-123 son ahora directas/naturales; la serie de profesor en S003-82–84 es consistente; la variante inglesa de *neighbour* y *cell phone* es coherente; y los ejemplos históricos de repetición de S001/S002 y S004/S005 ya no son duplicados literales. No se vuelven a registrar como defectos corregidos.
+
+**Acción requerida:** corregir únicamente los cinco CSV auditados para la siguiente iteración, conservando 150 pares por archivo, 12 unidades nuevas × 5, cada repaso 12/12, 30 pares que realmente practiquen el foco gramatical y las cantidades de integración; después repetir la validación técnica y lingüística de las filas modificadas y de los bloques de transferencia.

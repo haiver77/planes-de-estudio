@@ -1,0 +1,49 @@
+# Informe de auditoría lingüística y técnica — A1-S001 a A1-S005, iteración global 12
+
+**Resultado: requiere correcciones; se necesita otra iteración.** Alcance exclusivo: `loops_csv/12_loop/A1/A1-S001.csv` a `A1-S005.csv`. Se cotejaron `indicaciones_csv.md`, el plan aprobado de `loops_plan/11_loop/1_plan_estudio_por_sesiones_de_repeticion.md`, el catálogo de trazabilidad y las 14 observaciones del informe de la iteración anterior. No se auditaron otros CSV del nivel ni `loops_csv_old`.
+
+## Evidencia técnica y de distribución
+
+- Los cinco archivos solicitados existen; se comprobaron solo esos cinco. Cada uno tiene exactamente 150 líneas físicas y 150 registros CSV estrictos: 750 pares en total.
+- Lectura de bytes con UTF-8 estricto, sin BOM: A1-S001 12 352 bytes; A1-S002 11 769; A1-S003 12 159; A1-S004 13 084; A1-S005 12 649.
+- Cada línea tiene exactamente un `;`, dos campos no vacíos, sin encabezado, línea vacía, comillas desbalanceadas ni salto de línea dentro del registro. No hay `�`, secuencias de mojibake ni `?` usado como sustituto de letras. Todas las preguntas españolas tienen apertura `¿` y cierre `?`.
+- Los cinco archivos mantienen la distribución física prevista y las 12 unidades nuevas del catálogo aparecen en cinco filas cada una (filas 1–60). Reparto por sesión: S001 60 nuevas + 0 repaso vencido + 30 gramaticales (61–90) + 60 de integración (91–150); S002 y S003 60 + 12 de repaso (61–72) + 30 gramaticales (73–102) + 48 de integración (103–150); S004 y S005 60 + 24 de repaso (61–84) + 30 gramaticales (85–114) + 36 de integración (115–150). El repaso cubre 12/12 en S002, S003, S004 (12/12 de S003 y 12/12 de S001) y S005 (12/12 de S004 y 12/12 de S002). El recuento formal cumple; los defectos siguientes son de cobertura efectiva del lema y de variedad/contextualización.
+- La mayoría de las posiciones exactas señaladas en el informe previo ya fue reformulada: S004-103/104, S005-21/25, S005-76/150 y S005-100/106; se quitaron las plantillas «Respondo/I reply» de S002; se corrigieron S004-1/26, S005-80/123, S003-82/84 y la consistencia de *neighbour*/*cell phone*. No repito esas correcciones como fallos. Persisten, sin embargo, casos nuevos o cercanos de repetición y contextualización insuficiente, detallados abajo. S001-145 ahora incorpora *apenas*, que no se refleja en inglés.
+
+## Observaciones pendientes priorizadas
+
+### Prioridad alta — repaso sin contexto suficientemente nuevo y duplicados
+
+1. **Los bloques de repaso reutilizan varias veces el mismo microcontexto de introducción, a veces con cambios superficiales de sujeto, lugar o marcador temporal.** No basta con conservar 12/12 lemas si la frase de recuperación vuelve a presentar el mismo ejemplo:
+   - **S002, filas 61, 64, 66, 68–72**, frente a **S001, filas 1, 16, 26, 36, 41, 46, 51 y 56**, respectivamente: manzanas para el almuerzo; esperar unos años por una respuesta; café cerca de casa; cafetería abierta; estar de acuerdo con un amigo sobre una película; tener tiempo antes de clase; ayuda con la tarea; dinero para el almuerzo. Son las mismas situaciones o formulaciones casi idénticas. Reescribe las recuperaciones en escenarios distintos, manteniendo el lema de cada evento. También **S002-138** repite el contexto de terminar el almuerzo de **S001-6**; **S002-117** repite el paseo por el parque de **S001-22**; **S002-124** vuelve a las sillas del aula de **S001-2**.
+   - **S003-66** (*hospital/all night*) repite el marco de **S002-27**; **S003-72** (*train/station/at eight*) repite casi literalmente **S002-59**. Cambia el lugar, la actividad o el medio de transporte, no solo el sujeto/artículo. S003-65 (negocio abierto todo el día) también está demasiado cerca de S002-23 (mercado abierto todo el día).
+   - **S005, repaso de S004:** S005-63 repite las malas noticias sobre el mismo partido de S004-12; S005-65 vuelve a las cosas malas del mismo hotel de S004-21; S005-67 vuelve a iniciar una receta como S004-31; S005-70 repite la foto/imagen en blanco y negro de S004-46; S005-72 vuelve al teléfono móvil que necesita carga de S004-59. Cambia la situación de cada recuperación para que se practique el lema en transferencia contextual real.
+   - **S005, repaso de S002:** S005-74 reproduce en inglés S002-7 (*I like this song a lot*); S005-75 vuelve a «mucho que hacer antes de la cena» de S002-11; S005-80 vuelve a preguntar por algo más para el desayuno de S002-36; S005-82 vuelve al cierre temporal de un establecimiento en invierno de S002-50; y S005-83 repite literalmente en inglés el viaje por el mundo en tren de S003-71 (además de variar solo el género del familiar en español). Crea contextos nuevos y conserva el foco del repaso.
+   - Duplicados exactos o prácticamente idénticos entre sesiones adicionales: **S001-66 / S002-101** (*Is he my brother?*, par idéntico); **S004-91 / S005-114** (*You read a book before bed*); **S004-116 / S005-124** (*My best friend lives near the station*). Sustituye una ocurrencia de cada par por una frase nueva y autónoma. La repetición de **S004-91/92/93** como bloque afirmación-negación-pregunta puede conservarse donde se practica explícitamente la secuencia gramatical; no justifica copiar su afirmación de nuevo en S005-114.
+
+2. **Repeticiones internas y transferencias demasiado próximas en integración.**
+   - **S001-36/91:** la cafetería está abierta como respuesta a «buena idea»; **S001-95/96:** unos minutos antes de salir; **S001-38/101:** parque cercano; **S001-35/148:** llevar calzado cómodo; **S001-55/140:** ayuda para encontrar la estación. Reescribe una fila de cada pareja/grupo con propósito y situación distintos, no con sinónimos o cambios de sujeto.
+   - **S001-2/137:** sillas para el aula; **S001-99/141:** dinero para el autobús. Aunque no son pares literalmente idénticos, la segunda aparición apenas amplía el ejemplo previo. Sustituye una de cada pareja por un contexto diferente.
+   - **S005-117** (*visitar a la tía varias veces al mes*) reproduce el marco de **S001-11**; **S005-133** vuelve a comparar tren y autobús como en **S005-29**; **S005-144** repite «mucho que hacer antes de que llegue el autobús» de **S003-63**. Reemplaza una fila de cada caso por transferencia contextual distinta.
+
+3. **A1-S005, fila 45 — cobertura incompleta del lema *each other*.** `Mi pareja y yo compartimos los gastos del viaje.;My partner and I share the travel costs.` comunica una acción compartida, pero no practica la forma léxica *each other* indicada para las cinco filas 41–45. Cambia por un par natural que contenga explícitamente *each other* (por ejemplo, «Mi pareja y yo nos ayudamos con los gastos del viaje.;My partner and I help each other with the travel costs.»).
+
+### Prioridad media — naturalidad, autonomía y equivalencia
+
+4. **A1-S002, fila 37.** `¿Te apetece algo más de la carta?;Is anything else on the menu appealing?` se entiende, pero la pregunta inglesa es poco idiomática y menos directa. Cambia a una pregunta natural dirigida al interlocutor, por ejemplo `Would you like anything else from the menu?`, y conserva la intención de «¿Te apetece…?».
+
+5. **A1-S002, fila 41.** `¿Hay alguien más en la fila para el mapa?;Is anyone else in line for the map?` presenta una situación poco verosímil y no aclara por qué se hace fila para obtener un mapa. Reformula con un contexto plausible y autónomo que mantenga *anyone else* (por ejemplo, alguien esperando un mapa en el mostrador de información).
+
+6. **A1-S002, filas 46–50; S003-70; S005-82.** Los usos de *a period of time* recurren repetidamente a la misma construcción vaga («cierra durante/por un período de tiempo») o producen frases rígidas como `A period of time without rest is tiring.` Conserva el lema donde corresponda, pero redacta ejemplos idiomáticos y contextualmente precisos; evita presentar duración genérica como relleno. En S005-82, además, cambia el contexto de cierre invernal para resolver la repetición señalada en la observación 1.
+
+7. **A1-S003, fila 66.** `Al final, los músicos saludan al público.;At the end, the musicians greet the audience.` deja sin identificar qué evento termina y no ofrece contexto suficiente para que la fila sea plenamente autónoma. Nombra el evento de forma breve (por ejemplo, el concierto o la actuación) en ambas columnas.
+
+8. **A1-S004, fila 28.** `La niebla retrasa el vuelo por la mala visibilidad.;Fog delays the flight because of poor visibility.` vincula niebla y mala visibilidad como causa casi redundante. Conserva *because of* y el presente simple, pero usa una causa clara que no repita la explicación de la niebla.
+
+9. **A1-S001, fila 145.** `La escuela tiene apenas unos pocos años...;The school is a few years old...` añade en español el matiz de «apenas/solo», ausente en inglés. Elimina `apenas` o refleja `only` en inglés para mantener equivalencia.
+
+## Revisión expresa de observaciones anteriores
+
+Las observaciones anteriores sobre la secuencia S005-21/25, los bloques S005-100/106 y S005-76/150, las etiquetas editoriales de S002-118/120/144, la traducción de S004-1/26, la naturalidad de S005-80/123, la terminología S003-82/84 y la variante léxica/ortográfica S002/S004 muestran corrección en esta iteración. Las filas concretas antiguas de duplicación S001/S002 y S004/S005 se cambiaron, pero reaparecieron duplicaciones o microcontextos equivalentes en otras filas; deben atenderse los nuevos pares listados en las prioridades 1 y 2. La observación de S001-145 solo queda resuelta parcialmente por el matiz no traducido señalado en la prioridad 9.
+
+**Acción requerida:** volver a generar/corregir únicamente los cinco CSV auditados en el siguiente ciclo, manteniendo 150 pares, las 12 unidades nuevas × 5, los eventos de repaso 12/12, 30 filas gramaticales y la integración; después verificar otra vez UTF-8 real, estructura y variedad contextual. No se recomienda dar por cerrado el nivel con el estado actual.

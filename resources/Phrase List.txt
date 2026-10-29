@@ -1,0 +1,750 @@
+a bit	CEFR: A1
+a bit more	CEFR: A1
+a bit of a…	CEFR: B1
+a bit of sth	CEFR: A2
+a couple of sth	CEFR: A2
+a few	CEFR: A1
+a good idea	CEFR: A1
+a great deal	CEFR: B1
+a kind of...	CEFR: A2
+a little	CEFR: A1
+a little bit	CEFR: A1
+a little more	CEFR: A1
+a long time ago	CEFR: A1
+a long way	CEFR: A2
+a lot	CEFR: A1
+a lot more	CEFR: A1
+a lot of sth	CEFR: A1
+a means of sth	CEFR: B1
+a number of sth	CEFR: A2
+a period of time	CEFR: B1
+a range of sth	CEFR: A2
+a variety of sth	CEFR: B1
+able to do sth	CEFR: A1
+above all	CEFR: A2
+access to sth	CEFR: A2
+account for sth	CEFR: A2
+accused of sth	CEFR: A2
+act as sth	CEFR: A2
+add to sth	CEFR: A2
+after all	CEFR: A2
+again and again	CEFR: A2
+agree with sb	CEFR: A2
+aim to do sth	CEFR: A2
+aimed at doing sth	CEFR: A2
+aimed at sb	CEFR: A2
+all about…	CEFR: A2
+all but	CEFR: A2
+all day	CEFR: A1
+all kinds of…	CEFR: A2
+all over the world	CEFR: B1
+all over…	CEFR: A2
+all sorts of…	CEFR: A2
+all the more	CEFR: A2
+all the time	CEFR: A1
+all the way	CEFR: A1
+along with sb/sth	CEFR: A2
+alternative to sth	CEFR: A2
+and so on	CEFR: A2
+anything else	CEFR: A2
+apart from	CEFR: A2
+appeal to sb	CEFR: A2
+apply for sth	CEFR: A2
+apply to sb/sth	CEFR: A2
+around the world	CEFR: A2
+arrive at…	CEFR: A2
+arrive in…	CEFR: A2
+art gallery	CEFR: A2
+as a result	CEFR: B2
+as a whole	CEFR: A2
+as far as i am concerned	CEFR: B2
+as far as sb/sth is concerned	CEFR: B2
+as follows…	CEFR: A2
+as for sb/sth	CEFR: A2
+as if…	CEFR: A2
+as long as…	CEFR: B1
+as much as	CEFR: A2
+as of…	CEFR: A2
+as opposed to	CEFR: B1
+as part of sth	CEFR: B1
+as soon as	CEFR: A2
+as soon as possible	CEFR: B1
+as such	CEFR: A2
+as though…	CEFR: A2
+as to	CEFR: A2
+as well	CEFR: A2
+ask for sth	CEFR: A2
+associated with sth	CEFR: A2
+at first	CEFR: A2
+at home	CEFR: A1
+at last	CEFR: A2
+at least	CEFR: A2
+at once	CEFR: A1
+at present	CEFR: A2
+at risk	CEFR: A2
+at school	CEFR: A1
+at some point	CEFR: B1
+at the age of…	CEFR: B1
+at the beginning of sth	CEFR: B1
+at the end	CEFR: B1
+at the end of sth	CEFR: B1
+at the end of the day	CEFR: B2
+at the expense of sb/sth	CEFR: C1
+at the hands of sb	CEFR: C1
+at the moment	CEFR: A1
+at the same time	CEFR: B1
+at the start of sth	CEFR: B1
+at the time	CEFR: A2
+at the time of sth	CEFR: B1
+at the top	CEFR: A2
+at the weekend	CEFR: A1
+at this point	CEFR: B1
+at this stage	CEFR: B1
+at times	CEFR: A2
+at university	CEFR: A2
+at work	CEFR: A1
+attached to sb/sth	CEFR: A2
+awareness of sth	CEFR: A2
+away from sb/sth	CEFR: A2
+back and forth	CEFR: B1
+back sb/sth up	CEFR: B1
+bad for sb/sth	CEFR: A2
+bad news	CEFR: A1
+bad thing	CEFR: A2
+based on sth	CEFR: A2
+be about to do sth	CEFR: A2
+be allowed to do sth	CEFR: A2
+be attributed to sb	CEFR: C1
+be charged with sth	CEFR: B1
+be derived from sth	CEFR: C1
+be entitled to sth	CEFR: B1
+be expected to do sth	CEFR: A2
+be found to do sth	CEFR: C1
+be going on	CEFR: A2
+be going to do sth	CEFR: A2
+be known as sb/sth	CEFR: A2
+be known to do sth	CEFR: A2
+be made of sth	CEFR: A2
+be made up of sth	CEFR: B1
+be meant to do sth	CEFR: A2
+be reported to be sth	CEFR: C1
+be said to be sth	CEFR: C1
+be supposed to do sth	CEFR: A2
+be surrounded by sb/sth	CEFR: A2
+be to blame	CEFR: A2
+bear sb/sth in mind	CEFR: A2
+because of	CEFR: A2
+begin with sth	CEFR: A2
+believe in sb/sth	CEFR: A2
+belong to sb	CEFR: A2
+belong to sth	CEFR: A2
+benefit from sth	CEFR: A2
+best friend	CEFR: A1
+black and white	CEFR: A2
+both sides	CEFR: A2
+bound to do sth	CEFR: A2
+break up	CEFR: B1
+bring sb up	CEFR: B1
+bring sth about	CEFR: B1
+bring sth up	CEFR: B1
+by means of sth	CEFR: C1
+by no means	CEFR: B2
+by now	CEFR: A2
+by the end of sth	CEFR: B1
+by the time (that)…	CEFR: B1
+call for sth	CEFR: A2
+call on sb	CEFR: A2
+can't afford sth	CEFR: A2
+car park	CEFR: A2
+care about sth	CEFR: A2
+care for sb	CEFR: A2
+carry on	CEFR: B1
+carry sth out	CEFR: B1
+case study	CEFR: A2
+caused by sth	CEFR: A2
+cell phone	CEFR: A2
+check in	CEFR: B1
+check out	CEFR: B1
+check sb/sth out	CEFR: B1
+choose to do sth	CEFR: A2
+city centre	CEFR: A2
+clean up	CEFR: B1
+click on sth	CEFR: A2
+climate change	CEFR: A2
+close to sb/sth	CEFR: A2
+come across sb/sth	CEFR: B2
+come back	CEFR: A1
+come from…	CEFR: B1
+come into sth	CEFR: B1
+come on!	CEFR: A1
+come true	CEFR: A1
+come up with sth	CEFR: B1
+compared with sth	CEFR: A2
+concentrate on sth	CEFR: A2
+concerned about sth	CEFR: A2
+concerned with sth	CEFR: A2
+confidence in sb/sth	CEFR: A2
+connected to sth	CEFR: A2
+connected with sb/sth	CEFR: A2
+consist of sb/sth	CEFR: A2
+consistent with sth	CEFR: B1
+contribute to sth	CEFR: A2
+control over sb/sth	CEFR: A2
+cope with sth	CEFR: A2
+credit card	CEFR: A2
+deal with sb	CEFR: A2
+deal with sth	CEFR: A2
+decide on sth	CEFR: A2
+decline in sth	CEFR: B1
+dedicated to sth	CEFR: B1
+depend on sb/sth	CEFR: A2
+depend on sth	CEFR: A2
+dependent on sb/sth	CEFR: A2
+depending on	CEFR: A2
+deprive sb/sth of sth	CEFR: C1
+despite the fact that…	CEFR: B2
+developing countries	CEFR: A2
+differences between a and b	CEFR: B1
+difficult for sb	CEFR: A2
+dispose of sb/sth	CEFR: B1
+do well	CEFR: A2
+draw attention to sb/sth	CEFR: B1
+due to sb/sth	CEFR: A2
+each one	CEFR: A2
+each other	CEFR: A1
+economic growth	CEFR: B1
+end in sth	CEFR: A2
+end up	CEFR: A2
+end with sth	CEFR: A2
+engage in sth	CEFR: A2
+engaged in sth	CEFR: B1
+even if	CEFR: B1
+even more…	CEFR: A2
+even though	CEFR: B1
+ever since	CEFR: A2
+every day	CEFR: A1
+everyone else	CEFR: A2
+exactly the same	CEFR: A2
+except for	CEFR: A2
+excuse me	CEFR: A1
+experience in sth	CEFR: A2
+exposure to sth	CEFR: B1
+fail to do sth	CEFR: A2
+fall asleep	CEFR: A1
+fall in love	CEFR: A2
+fall off	CEFR: A2
+family member	CEFR: A2
+far away	CEFR: A1
+far from sth	CEFR: A2
+far more	CEFR: A2
+far too	CEFR: A2
+fed up	CEFR: A2
+feel good	CEFR: A1
+feel like sth	CEFR: A2
+figure sb/sth out	CEFR: B2
+fill sth in	CEFR: B1
+find it difficult to do sth	CEFR: B2
+find out	CEFR: B1
+find yourself doing sth	CEFR: B2
+first of all	CEFR: A1
+focus on sb/sth	CEFR: A2
+follow sth up	CEFR: A2
+followed by sb/sth	CEFR: A2
+for a long time	CEFR: B1
+for a moment	CEFR: A2
+for a while	CEFR: A2
+for example	CEFR: A1
+for free	CEFR: A1
+for instance	CEFR: A2
+for life	CEFR: A2
+for long	CEFR: A2
+for lunch	CEFR: A2
+for many years	CEFR: A2
+for some time	CEFR: A2
+for that matter	CEFR: B2
+for the benefit of sb	CEFR: C1
+for the first time	CEFR: B1
+for the rest of sth	CEFR: B1
+for the sake of sb/sth	CEFR: C1
+for this reason	CEFR: B1
+get away with sth	CEFR: B2
+get back	CEFR: A1
+get better	CEFR: A1
+get home	CEFR: A1
+get in	CEFR: B1
+get lost	CEFR: A1
+get married	CEFR: A1
+get off	CEFR: B1
+get on	CEFR: B1
+get on with sb	CEFR: B1
+get out	CEFR: B1
+get over sb/sth	CEFR: B2
+get ready	CEFR: A1
+get rid of sb/sth	CEFR: B2
+get there	CEFR: B1
+get to know sb	CEFR: B1
+get to…	CEFR: B1
+get up	CEFR: A1
+get used to sth	CEFR: B2
+give sth up	CEFR: B1
+give up	CEFR: B1
+given that…	CEFR: A2
+global warming	CEFR: A2
+go ahead	CEFR: B1
+go and…	CEFR: B1
+go away	CEFR: A1
+go back	CEFR: A1
+go down	CEFR: B1
+go down sth	CEFR: B1
+go for sth	CEFR: B1
+go home	CEFR: A1
+go into sth	CEFR: B1
+go off	CEFR: B1
+go on to do sth	CEFR: B1
+go out	CEFR: A1
+go through sth	CEFR: B1
+go to bed	CEFR: A1
+go to school	CEFR: A1
+go to work	CEFR: A1
+go up	CEFR: B1
+go wrong	CEFR: B1
+good at sth	CEFR: A2
+good for sb/sth	CEFR: A2
+good luck	CEFR: A1
+good morning	CEFR: A1
+good news	CEFR: A1
+good thing	CEFR: A2
+grow up	CEFR: A1
+growth in sth	CEFR: A2
+guess what…	CEFR: A2
+had better	CEFR: A2
+half an hour	CEFR: A1
+hang on	CEFR: B1
+happen to sb/sth	CEFR: A2
+happy with sb/sth	CEFR: A2
+hard work	CEFR: A2
+have a look	CEFR: A2
+have fun	CEFR: A1
+have got	CEFR: A1
+have got to	CEFR: A2
+have no idea	CEFR: A2
+have nothing to do with sb/sth	CEFR: B2
+have sb/sth in mind	CEFR: A2
+have sth in common	CEFR: A2
+have time	CEFR: A1
+have you ever…?	CEFR: A2
+he or she	CEFR: A2
+health problems	CEFR: A2
+hear about sb/sth	CEFR: B1
+hear of sb/sth	CEFR: B1
+heart disease	CEFR: A2
+high school	CEFR: A2
+high street	CEFR: A2
+higher education	CEFR: A2
+his or her	CEFR: A2
+how about…?	CEFR: A2
+how are you?	CEFR: A1
+how long…?	CEFR: A2
+how many…?	CEFR: A2
+how much…?	CEFR: A2
+how often…?	CEFR: A2
+human being	CEFR: A2
+human rights	CEFR: A2
+i don't care	CEFR: A2
+i guess	CEFR: A2
+i have to say…	CEFR: B1
+i mean	CEFR: A1
+i think so	CEFR: A1
+i wonder if…	CEFR: A2
+i would say…	CEFR: A2
+i'm afraid…	CEFR: A2
+i'm sorry	CEFR: A1
+if i were you	CEFR: B2
+if necessary	CEFR: A2
+if only…	CEFR: B1
+if you want to	CEFR: B1
+important for sb/sth	CEFR: A2
+in a position to do sth	CEFR: B1
+in a way that…	CEFR: B1
+in accordance with sth	CEFR: C1
+in action	CEFR: A2
+in addition	CEFR: A2
+in advance	CEFR: A2
+in an attempt to do sth	CEFR: B1
+in any case	CEFR: A2
+in april	CEFR: A2
+in bed	CEFR: A1
+in business	CEFR: A2
+in case…	CEFR: A2
+in charge of sb/sth	CEFR: A2
+in class	CEFR: A2
+in conjunction with sb/sth	CEFR: C1
+in connection with sb/sth	CEFR: C1
+in contrast	CEFR: B2
+in danger	CEFR: A2
+in effect	CEFR: B2
+in fact	CEFR: A2
+in favour of sb/sth	CEFR: B2
+in front of	CEFR: A1
+in full	CEFR: A2
+in general	CEFR: A2
+in history	CEFR: A2
+in hospital	CEFR: A2
+in line with sth	CEFR: B2
+in love	CEFR: A1
+in my opinion	CEFR: B2
+in order of sth	CEFR: B1
+in order to do sth	CEFR: B2
+in other words	CEFR: B1
+in part	CEFR: A2
+in particular	CEFR: A2
+in place	CEFR: A2
+in practice	CEFR: A2
+in prison	CEFR: A2
+in public	CEFR: A2
+in recent years	CEFR: A2
+in relation to sb/sth	CEFR: C1
+in respect of sth	CEFR: C1
+in response to sth	CEFR: B2
+in school	CEFR: A2
+in some cases	CEFR: A2
+in space	CEFR: A2
+in spite of sth	CEFR: B2
+in such a way (that)…	CEFR: B1
+in summer	CEFR: A2
+in terms of sth	CEFR: C1
+in the absence of sb/sth	CEFR: C1
+in the air	CEFR: A2
+in the case of sth	CEFR: B2
+in the centre	CEFR: A2
+in the country	CEFR: A2
+in the course of…	CEFR: B1
+in the end	CEFR: B1
+in the event of sth	CEFR: C1
+in the face of sth	CEFR: C1
+in the first place	CEFR: B1
+in the form of sb/sth	CEFR: B1
+in the future	CEFR: A2
+in the hands of sb	CEFR: B1
+in the light of sth	CEFR: C1
+in the meantime	CEFR: A2
+in the middle	CEFR: A2
+in the midst of sth	CEFR: C1
+in the morning	CEFR: A1
+in the near future	CEFR: B1
+in the north	CEFR: A2
+in the past	CEFR: A1
+in the presence of sb	CEFR: B1
+in the same way	CEFR: B1
+in the street	CEFR: A2
+in the summer	CEFR: A2
+in the wake of sb/sth	CEFR: C1
+in the way (that)…	CEFR: B1
+in this case	CEFR: A2
+in this way	CEFR: A2
+in time	CEFR: A2
+in touch	CEFR: A2
+in town	CEFR: A2
+in turn	CEFR: A2
+instead of	CEFR: A2
+investment in sth	CEFR: B1
+involvement in sth	CEFR: B1
+it depends	CEFR: A2
+it is important to do sth	CEFR: B1
+it takes …	CEFR: A2
+kind of sb/sth	CEFR: A2
+know how	CEFR: A2
+last time	CEFR: A2
+last year	CEFR: A1
+lead to sth	CEFR: A2
+learn how to do sth	CEFR: A2
+leave sb/sth out	CEFR: B1
+less than…	CEFR: A2
+let alone	CEFR: B1
+let me know	CEFR: A1
+let me…	CEFR: B1
+likely to do sth	CEFR: A2
+listen to sb/sth	CEFR: A1
+little more than…	CEFR: A2
+live on sth	CEFR: A2
+live with sb	CEFR: A2
+living room	CEFR: A1
+loads of sb/sth	CEFR: A2
+look after sb/sth/yourself	CEFR: B1
+look at sb/sth	CEFR: A1
+look back at sth	CEFR: B1
+look for sb/sth	CEFR: A1
+look forward to sth	CEFR: B1
+look like sb/sth	CEFR: B1
+look out	CEFR: B1
+look sth up	CEFR: B1
+lots of…	CEFR: A2
+make a difference	CEFR: B1
+make a mistake	CEFR: A1
+make money	CEFR: A1
+make sense	CEFR: B1
+make sth up	CEFR: B1
+make sure	CEFR: A1
+manage to do sth	CEFR: A2
+may well	CEFR: A2
+mean to do sth	CEFR: A2
+mental health	CEFR: A2
+millions of…	CEFR: A2
+mobile phone	CEFR: A1
+more and more	CEFR: A2
+more or less	CEFR: A2
+more than…	CEFR: A2
+move on	CEFR: B1
+much better	CEFR: A2
+next time	CEFR: A1
+next year	CEFR: A1
+no doubt	CEFR: A2
+no longer	CEFR: A2
+no matter…	CEFR: B1
+no more than…	CEFR: A2
+no problem	CEFR: A1
+no way	CEFR: A2
+not at all	CEFR: A1
+not even	CEFR: A2
+not necessarily	CEFR: B2
+not only	CEFR: A2
+not to mention	CEFR: B2
+nothing but	CEFR: B2
+nothing like	CEFR: B2
+of course	CEFR: A1
+oh dear	CEFR: A2
+oh no!	CEFR: A1
+oh well	CEFR: A2
+oh yes	CEFR: A2
+old friend	CEFR: A2
+on a regular basis	CEFR: B2
+on behalf of sb	CEFR: B2
+on board	CEFR: A2
+on earth	CEFR: A2
+on holiday	CEFR: A1
+on monday	CEFR: A1
+on my own	CEFR: A1
+on television	CEFR: A2
+on the basis of sth	CEFR: C1
+on the beach	CEFR: A1
+on the floor	CEFR: A2
+on the ground	CEFR: A2
+on the internet	CEFR: A2
+on the left	CEFR: A1
+on the one hand	CEFR: B1
+on the other hand	CEFR: B2
+on the other side	CEFR: B1
+on the part of sb	CEFR: C1
+on the phone	CEFR: A1
+on the street	CEFR: A2
+on the wall	CEFR: A2
+on the way	CEFR: A2
+on time	CEFR: A1
+on top of sth/sb	CEFR: A2
+on tv	CEFR: A2
+once a…	CEFR: A2
+once again	CEFR: A2
+one another	CEFR: A2
+one day	CEFR: A2
+one or two	CEFR: A2
+opposed to sth	CEFR: B2
+or so	CEFR: A2
+or something	CEFR: A2
+or two	CEFR: A2
+ordinary people	CEFR: A2
+other than	CEFR: B2
+ought to	CEFR: A2
+out of sth	CEFR: B2
+out there	CEFR: A2
+over the course of…	CEFR: B1
+over the years	CEFR: A2
+over there	CEFR: A1
+over time	CEFR: A2
+participate in sth	CEFR: B2
+pay attention	CEFR: A2
+pay for sth	CEFR: A2
+per hour	CEFR: A2
+phone call	CEFR: A2
+phone number	CEFR: A1
+pick sb/sth up	CEFR: A1
+plan for sth	CEFR: A2
+play with sb/sth	CEFR: A2
+point of view	CEFR: B1
+point out	CEFR: A2
+police officer	CEFR: A1
+police station	CEFR: A2
+post office	CEFR: A1
+potential for sth	CEFR: B2
+prepared to do sth	CEFR: B2
+pretty good	CEFR: A2
+pretty much	CEFR: A2
+primary school	CEFR: A2
+prime minister	CEFR: A2
+prior to	CEFR: B2
+prove to be sth	CEFR: B1
+public transport	CEFR: A2
+put it	CEFR: B1
+put sth forward	CEFR: B2
+put sth on	CEFR: B1
+put sth together	CEFR: B1
+put sth up	CEFR: B1
+quality of life	CEFR: B1
+quite a lot	CEFR: A2
+quite a…	CEFR: A2
+raise money	CEFR: A2
+ranging from	CEFR: B2
+rather than	CEFR: B2
+reaction to sth	CEFR: A2
+really enjoy	CEFR: A2
+really good	CEFR: A2
+really like	CEFR: A2
+reasons why	CEFR: A2
+refer to sb/sth	CEFR: A2
+regarded as sth	CEFR: B2
+relate to sth/sb	CEFR: A2
+related to sth/sb	CEFR: A2
+relevant to sb/sth	CEFR: B2
+rely on sb/sth	CEFR: B2
+report on sth	CEFR: A2
+respect for sb/sth	CEFR: B1
+respond to sth/sb	CEFR: B2
+result in sth	CEFR: B2
+right now	CEFR: A1
+rise in sth	CEFR: A2
+role model	CEFR: A2
+run out	CEFR: B1
+run out of sth	CEFR: B1
+save money	CEFR: A1
+science fiction	CEFR: A2
+search engine	CEFR: A2
+search for sth/sb	CEFR: A2
+secondary school	CEFR: A2
+see you	CEFR: A1
+seek to do sth	CEFR: B2
+set out	CEFR: B1
+set sth up	CEFR: B1
+set to do sth	CEFR: B1
+short of sth	CEFR: A2
+sit down	CEFR: A1
+slow down	CEFR: A1
+so as to do sth	CEFR: B2
+so far	CEFR: A2
+so that…	CEFR: A2
+solution to sth	CEFR: A2
+some kind of…	CEFR: A2
+someone else	CEFR: A1
+something like…	CEFR: A2
+sort of sth	CEFR: B1
+sort sb/sth/yourself out	CEFR: B1
+sound like sb/sth	CEFR: A2
+speak to sb	CEFR: A1
+spend time	CEFR: A1
+stand up	CEFR: A1
+start with sb/sth	CEFR: A2
+stay in	CEFR: A1
+stick to sth	CEFR: A2
+subject to sth	CEFR: B2
+succeed in doing sth	CEFR: B2
+such a/an…	CEFR: A2
+such as	CEFR: A2
+suffer from sth	CEFR: B1
+sum up	CEFR: A2
+sure to do sth	CEFR: A2
+swimming pool	CEFR: A1
+take advantage of sb/sth	CEFR: B2
+take care of sb/sth/yourself	CEFR: A1
+take off	CEFR: A1
+take over	CEFR: B1
+take part	CEFR: A1
+take place	CEFR: A1
+take sth into account	CEFR: B2
+take sth off	CEFR: B1
+take sth up	CEFR: B1
+take sth/sb on	CEFR: B1
+take up sth	CEFR: B1
+talk about sb/sth	CEFR: A1
+tell the truth	CEFR: A1
+tend to do sth	CEFR: B2
+thank you	CEFR: A1
+thanks to sb/sth	CEFR: A2
+that day	CEFR: A2
+that is	CEFR: A2
+that's it	CEFR: A1
+the 20th century	CEFR: A2
+the best thing	CEFR: A2
+the case	CEFR: A2
+the extent to which…	CEFR: C1
+the fact that…	CEFR: B2
+the first thing	CEFR: A2
+the following…	CEFR: A2
+the important thing	CEFR: A2
+the next day	CEFR: A2
+the other side of sth	CEFR: B1
+the rest of sth	CEFR: A2
+the vast majority of sth	CEFR: C1
+there is	CEFR: A1
+these days	CEFR: A1
+they say…	CEFR: A2
+think about sb/sth	CEFR: A2
+think of sb/sth	CEFR: A2
+this is…	CEFR: A2
+this kind of…	CEFR: A2
+this morning	CEFR: A1
+this time	CEFR: A1
+this year	CEFR: A1
+those who…	CEFR: A2
+thousands of…	CEFR: A2
+throw sth away	CEFR: B1
+to date	CEFR: B2
+to do with sb/sth	CEFR: A2
+together with	CEFR: A2
+too bad	CEFR: A1
+too long	CEFR: A2
+too much	CEFR: A1
+town centre	CEFR: A1
+try and…	CEFR: A2
+turn into sth	CEFR: B1
+turn out	CEFR: B1
+turn sth off	CEFR: B1
+turn sth on	CEFR: B1
+turn sth up	CEFR: B1
+tv show	CEFR: A1
+unable to do sth	CEFR: A2
+up against sth	CEFR: A2
+up and down	CEFR: A2
+up to sb	CEFR: A2
+up to sth	CEFR: A2
+wait for sb/sth	CEFR: A1
+wake up	CEFR: A1
+way of life	CEFR: A2
+welcome to sth	CEFR: A2
+well known	CEFR: A2
+what about…?	CEFR: A2
+when it comes to sth	CEFR: B1
+whether or not…	CEFR: B1
+why not…?	CEFR: A2
+with regard to sb/sth	CEFR: C1
+with respect to sth	CEFR: C1
+with the exception of sb/sth	CEFR: C1
+work as sth	CEFR: B1
+work for sb/sth	CEFR: B1
+work hard	CEFR: A1
+work on sth	CEFR: B1
+work out	CEFR: B1
+work sth out	CEFR: B1
+work together	CEFR: A1
+work with sb	CEFR: B1
+worried about sb/sth	CEFR: A2
+would like	CEFR: A1
+would love to do sth	CEFR: A2
+would rather…	CEFR: A2
+would you like…?	CEFR: A2
+write sth down	CEFR: A1
+wrong with sb/sth	CEFR: A2
+x hours a day	CEFR: A2
+x times a…	CEFR: A2
+x years ago	CEFR: A2
+x years later	CEFR: A2
+x years old	CEFR: A2
+you see	CEFR: A2
+you're welcome	CEFR: A1
