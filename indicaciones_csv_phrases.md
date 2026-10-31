@@ -79,15 +79,65 @@ Mi profesor explica la expresión «at school» después de clase.;My teacher ex
 
 # Reglas para el validador
 
-A continuación, las reglas que debe aplicar el agente validador.
+A continuación, las reglas que debe aplicar el agente validador. Sólo se deben validar los CSV que aparecen con observaciones abiertas; omitir de revisión aquellos que ya fueron completados en el loop de validación anterior.
 
-Reglas generales por archivo csv:
+## Reglas generales por archivo csv:
+
 - **Regla: Progresion y repetición incremental:** Inserta el vocabulario foco comenzando con ejemplos simples e independientes cuando sea gramaticalmente apropiado, y lo refuerza mediante repeticiones graduales en distintos contextos antes de introducir un nuevo vocabulario foco.
+Es válido cuando la frase añade detalles que permiten imaginar una escena diferente. No es válido cuando solo cambia la frecuencia, probabilidad o tiempo de ocurrencia de la misma escena sin aportar nuevo contenido contextual relevante.
+
+Ejemplos aplicados:
+```
+✅ Válido:
+    - Trabajo todo el día.
+    - Trabajo todo el día los lunes.
+    - En verano, trabajo todo el día.
+
+Porque "los lunes" y "en verano" crean escenarios temporales distintos y específicos.
+
+✅ Válido:
+    - Los niños crecen rápido.;Children grow up quickly.
+    - Mis hijos crecen muy rápido.;My children grow up very quickly.
+    - Los niños crecen muy rápido en esta etapa.;Children grow up very quickly at this age.
+
+Porque "Los niños", "Mis hijos" y "en esta etapa" crean escenarios de sujetos distintos.
+
+✅ Válido:
+    - El bebé está en la cama.;The baby is in bed.
+    - El bebé está en la cama y escucha una canción suave.;The baby is in bed and listens to a soft song.
+    - El bebé está en la cama con su manta favorita.;The baby is in bed with his favourite blanket.
+    - Después de clase, el bebé está en la cama.;After class, the baby is in bed.
+
+Porque "y escucha una canción suave", "con su manta favorita" y "Después de clase" crean escenarios contextuales distintos y específicos alrededor del mismo vocabulario foco ("in bed").
+
+✅ Válido:
+    - Trabajo para ganar dinero.;I work to make money.
+    - Durante el viaje, trabajo para ganar dinero.;During the trip, I work to make money.
+
+Porque añade elementos adicionales a la frase inicial. (Se permite repetir si se agrega elementos adicionales de tiempo, lugar, contexto, etc)
+
+✅ Válido:
+    - Me aseguro de llevar las llaves antes de salir.;I make sure I take the keys before I leave.
+    - Por la mañana, me aseguro de llevar las llaves.;In the morning, I make sure I take the keys.
+
+Porque añade elementos adicionales a la frase inicial. (Se permite repetir si se agrega elementos adicionales de tiempo, lugar, contexto, etc)
+
+❌ No válido:
+    - A veces, vemos la película gratis en el parque.
+    - En verano, vemos la película gratis en el parque.
+    - Con frecuencia, vemos la película gratis en el parque.
+
+Porque los cambios solo afectan a la frecuencia o al momento en que ocurre la acción, pero la escena principal sigue siendo exactamente la misma: "ver la película gratis en el parque". No se introducen nuevos elementos, participantes, objetos o situaciones que aporten un contexto significativamente diferente para el aprendizaje.
+```
+
+En caso de no cumplir con la regla, indica claramente qué lineas deberían modificarse y sugiere con qué frase reemplazarla que cumpla con las reglas.
+
 - **Regla: Cobertura:** exactamente un CSV por cada ID del nivel en el plan.
 - **Regla: Formato y codificación:** UTF-8 válido; dos columnas sin encabezado (español; inglés) separadas por `;`
 - **Regla: Cantidad:** cada CSV tiene al menos el mínimo de frases indicado.
 
-Reglas por linea:
+## Reglas por linea:
+
 - **Regla: Frase con sentido:** Salvo la primera aparición del vocabulario objetivo, que puede mostrarse de forma aislada cuando resulte natural, para todas las demás asegurate que la frase tenga sentido completo y pueda utilizarse de forma independiente. En caso de no cumplir con la regla, sugerir la nueva frase con sentido con la que debería reemplazarse, asegurate de no sugerir una frase que ya existe.
 - **Regla: Sin caracteres extraños** Rechaza comas como delimitador, `;`, filas vacías, campos extra, comillas mal cerradas, columnas invertidas y saltos de línea dentro de filas. Revisa que `á é í ó ú ü ñ ¿ ¡` estén correctos; señala `?` sustituyendo.letras y texto corrupto (`Ã¡`, `Ã±`, `�`). Las preguntas en español exigen `¿`; el `?` de cierre es válido.
 - **Regla: Desambiguación de sujeto** Detecta casos donde el sujeto en español no permite identificar inequívocamente el pronombre utilizado en inglés. 
