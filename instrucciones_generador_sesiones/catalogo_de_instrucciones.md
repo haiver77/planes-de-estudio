@@ -6,14 +6,14 @@ Usa este catálogo para elegir las instrucciones según el **objetivo principal 
 
 | Necesitas practicar… | Usa este archivo |
 |---|---|
-| Un verbo, sus conjugaciones y su uso repetido en frases sencillas | [aprendizaje_verbos.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_verbos.md) |
-| Un sustantivo, objeto o concepto léxico, con artículos, número o contabilidad cuando corresponda | [aprendizaje_sustantivos.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_sustantivos.md) |
-| Un adjetivo, sus sentidos, concordancia, posición o función en la frase | [aprendizaje_adjetivos.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_adjetivos.md) |
-| Un adverbio o locución adverbial: modo, tiempo, frecuencia, lugar, grado, negación, foco u otra función adverbial | [aprendizaje_adverbios.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_adverbios.md) |
-| Un determinante: artículo, demostrativo, posesivo, cuantificador, numeral, interrogativo, exclamativo o distributivo | [aprendizaje_determinantes.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_determinantes.md) |
-| Una preposición o locución preposicional y la relación que expresa —por ejemplo, lugar, dirección, tiempo, causa o compañía— | [aprendizaje_preposiciones.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_preposiciones.md) |
-| Una conjunción o construcción conjuntiva y la relación lógica o gramatical que establece entre ideas | [aprendizaje_conjunciones.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_conjunciones.md) |
-| Una expresión fija, phrasal verb, patrón gramatical, expresión de cantidad u otro objetivo formulado como una frase o estructura completa | [aprendizaje_frases_y_expresiones.md](C:/GIT/planes-de-estudio/instrucciones_generador_sesiones/aprendizaje_frases_y_expresiones.md) |
+| Un verbo, sus conjugaciones y su uso repetido en frases sencillas | [aprendizaje_verbos.md](./aprendizaje_verbos.md) |
+| Un sustantivo, objeto o concepto léxico, con artículos, número o contabilidad cuando corresponda | [aprendizaje_sustantivos.md](./aprendizaje_sustantivos.md) |
+| Un adjetivo, sus sentidos, concordancia, posición o función en la frase | [aprendizaje_adjetivos.md](./aprendizaje_adjetivos.md) |
+| Un adverbio o locución adverbial: modo, tiempo, frecuencia, lugar, grado, negación, foco u otra función adverbial | [aprendizaje_adverbios.md](./aprendizaje_adverbios.md) |
+| Un determinante: artículo, demostrativo, posesivo, cuantificador, numeral, interrogativo, exclamativo o distributivo | [aprendizaje_determinantes.md](./aprendizaje_determinantes.md) |
+| Una preposición o locución preposicional y la relación que expresa —por ejemplo, lugar, dirección, tiempo, causa o compañía— | [aprendizaje_preposiciones.md](./aprendizaje_preposiciones.md) |
+| Una conjunción o construcción conjuntiva y la relación lógica o gramatical que establece entre ideas | [aprendizaje_conjunciones.md](./aprendizaje_conjunciones.md) |
+| Una expresión fija, phrasal verb, patrón gramatical, expresión de cantidad u otro objetivo formulado como una frase o estructura completa | [aprendizaje_frases_y_expresiones.md](./aprendizaje_frases_y_expresiones.md) |
 
 ## Criterios para resolver solapamientos
 

@@ -36,7 +36,7 @@ TIPO = modo
 SENTIDO = con cuidado y atención
 ```
 
-`TIPO` y `SENTIDO` pueden omitirse si el uso es inequívoco. `FRASES` indica la cantidad de frases emparejadas, además de la fila inicial con el adverbio. Si el usuario proporciona varios adverbios, generar un archivo por cada uno y por cada sentido que requiera una sesión diferenciada, salvo que solicite explícitamente compararlos.
+`NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`). `TIPO` y `SENTIDO` son opcionales si el uso es inequívoco. `FRASES` indica la cantidad de frases emparejadas, además de la fila inicial con el adverbio. Si el usuario proporciona varios adverbios, generar un archivo por cada uno y por cada sentido que requiera una sesión diferenciada, salvo que solicite explícitamente compararlos.
 
 ## Formato del CSV
 

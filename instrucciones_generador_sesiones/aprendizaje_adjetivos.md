@@ -51,10 +51,11 @@ IDIOMA_NATIVO = español
 IDIOMA_DESTINO = inglés
 NIVEL = principiante
 FRASES = 15
+TIPO = calidad
 SENTIDO = de tamaño reducido
 ```
 
-`SENTIDO` es opcional cuando el adjetivo tiene un significado claro en el contexto. Si el adjetivo es polisémico, confirmar o elegir el sentido explícitamente solicitado. Generar un archivo separado por adjetivo y sentido, salvo que el usuario pida comparar varios sentidos o adjetivos.
+`NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`). `TIPO` es opcional. `SENTIDO` es opcional cuando el adjetivo tiene un significado claro en el contexto. Si el adjetivo es polisémico, confirmar o elegir el sentido explícitamente solicitado. Generar un archivo separado por adjetivo y sentido, salvo que el usuario pida comparar varios sentidos o adjetivos.
 
 ## Organización de la sesión
 

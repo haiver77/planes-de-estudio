@@ -37,7 +37,7 @@ TIPO = lugar
 SENTIDO = ubicación dentro de un espacio
 ```
 
-`TIPO` y `SENTIDO` son opcionales si el uso es inequívoco. Si la preposición es polisémica o puede ser un falso amigo, precisar el sentido antes de generar la lista. Si se trabaja una locución, registrarla como unidad objetivo.
+`NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`). `TIPO` y `SENTIDO` son opcionales si el uso es inequívoco. Si la preposición es polisémica o puede ser un falso amigo, precisar el sentido antes de generar la lista. Si se trabaja una locución, registrarla como unidad objetivo.
 
 ## Formato del CSV
 

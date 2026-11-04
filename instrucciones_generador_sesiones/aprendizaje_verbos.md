@@ -8,15 +8,15 @@ El objetivo principal no es la variedad de frases, sino la exposición repetida 
 
 ---
 
-# Formato del CSV
+## Formato del CSV
 
-Cada fila debe contener exactamente dos columnas separadas por punto y coma (`;`):
+Cada fila debe contener exactamente dos columnas separadas por punto y coma (`;`), sin encabezado ni filas vacías. La primera columna contiene el texto en el idioma nativo y la segunda su traducción al idioma destino. No usar punto y coma dentro de una frase.
 
 ```text
-Frase en español;Frase en idioma destino
+Texto en idioma nativo;Texto en idioma destino
 ```
 
-Ejemplo:
+La primera fila presenta el verbo y su equivalente; las siguientes contienen frases emparejadas:
 
 ```text
 yo corro.;I run.
@@ -26,7 +26,7 @@ yo corro en el parque.;I run in the park.
 
 ---
 
-# Enfoque Pedagógico
+## Enfoque Pedagógico
 
 Las frases deben construirse de forma incremental.
 
@@ -42,13 +42,13 @@ Esto permite que el estudiante:
 
 ---
 
-# Estructura General
+## Estructura General
 
-Para cada verbo se deben generar varios bloques independientes, uno por conjugación.
+Generar un bloque por cada conjugación que corresponda al idioma nativo. La cantidad indicada en `FRASES` se aplica a cada bloque y no incluye la fila inicial del verbo.
 
 Cada bloque debe seguir exactamente el mismo patrón de complejidad.
 
-## Conjugaciones obligatorias
+### Conjugaciones de referencia
 
 ```text
 yo
@@ -63,7 +63,7 @@ nosotras
 
 ---
 
-# Progresión Recomendada
+## Progresión Recomendada
 
 Cada bloque debe avanzar gradualmente siguiendo una secuencia similar a la siguiente:
 
@@ -80,9 +80,9 @@ Cada bloque debe avanzar gradualmente siguiendo una secuencia similar a la sigui
 
 ---
 
-# Ejemplo de Progresión
+## Ejemplo de Progresión
 
-## Verbo: correr
+### Verbo: correr
 
 ```text
 correr
@@ -101,39 +101,39 @@ mañana, yo corro una carrera.
 
 ---
 
-# Reglas de Generación
+## Reglas de Generación
 
-## Simplicidad
+### Simplicidad
 
 - Utilizar vocabulario de uso frecuente.
 - Evitar tecnicismos.
 - Utilizar estructuras comunes del lenguaje cotidiano.
 
-## Repetición
+### Repetición
 
 - Repetir constantemente el verbo objetivo.
 - Repetir estructuras previamente utilizadas.
 - Priorizar refuerzo sobre variedad.
 
-## Dificultad
+### Dificultad
 
 - Mantener nivel principiante.
 - Introducir vocabulario nuevo gradualmente.
 - Agregar máximo uno o dos conceptos nuevos por frase.
 
-## Longitud
+### Longitud
 
 - Mantener oraciones cortas.
 - Evitar frases largas o complejas.
 - Evitar subordinadas avanzadas.
 
-## Consistencia
+### Consistencia
 
 - Mantener el mismo tiempo verbal dentro de un bloque.
 - Mantener el mismo sujeto durante todo el bloque.
 - Mantener el mismo verbo objetivo durante todo el archivo.
 
-## Naturalidad
+### Naturalidad
 
 - Las traducciones deben ser naturales para hablantes nativos.
 - Evitar traducciones literales incorrectas.
@@ -141,28 +141,35 @@ mañana, yo corro una carrera.
 
 ---
 
-# Cantidad Recomendada
+## Cantidad Recomendada
 
 Generar entre 10 y 20 frases por cada conjugación.
 
 Ejemplo:
 
 ```text
-8 conjugaciones × 15 frases = 120 registros
+8 conjugaciones × 15 frases = 120 frases, más 1 fila inicial del verbo
 ```
 
 ---
 
-# Parámetros de Entrada
+## Parámetros de Entrada
 
-El generador debe aceptar parámetros similares a los siguientes:
+Usar los parámetros proporcionados por el usuario. Si falta el objetivo o alguno de los idiomas, pedir aclaración en vez de inventarlos:
 
 ```text
 VERBO = correr
+IDIOMA_NATIVO = español
 IDIOMA_DESTINO = inglés
 NIVEL = principiante
-FRASES_POR_CONJUGACION = 15
+FRASES = 15
+TIPO = regular
+SENTIDO = moverse rápidamente a pie
 ```
+
+- `NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`).
+- `FRASES`: cantidad de frases por cada conjugación.
+- `TIPO` y `SENTIDO` son opcionales. Usarlos si el verbo es irregular, reflexivo o polisémico.
 
 Ejemplos válidos:
 
@@ -179,20 +186,18 @@ VERBO = trabajar
 
 ---
 
-# Ejemplo de Resultado Esperado
+## Ejemplo de Resultado Esperado
 
-## Verbo: comer
+### Verbo: comer
 
 ```text
 comer;to eat
-
 yo como.;I eat.
 yo como rápido.;I eat quickly.
 yo como una manzana.;I eat an apple.
 yo como en la cocina.;I eat in the kitchen.
 yo como todos los días.;I eat every day.
 hoy, yo como una manzana.;today, I eat an apple.
-
 él come.;he eats.
 él come rápido.;he eats quickly.
 él come una manzana.;he eats an apple.
@@ -203,7 +208,7 @@ hoy, él come una manzana.;today, he eats an apple.
 
 ---
 
-# Objetivo Fundamental
+## Objetivo Fundamental
 
 La prioridad absoluta es la repetición controlada.
 
@@ -218,4 +223,4 @@ La repetición debe ser intencional y sistemática.
 
 No intentar maximizar variedad, creatividad o complejidad.
 
-La meta es que el estudiante adquiera el vocabulario 
+La meta es que el estudiante adquiera el vocabulario y pueda usar el verbo objetivo en contextos sencillos con las conjugaciones pertinentes.

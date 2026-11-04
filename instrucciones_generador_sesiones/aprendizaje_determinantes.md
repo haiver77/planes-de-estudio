@@ -31,10 +31,10 @@ IDIOMA_DESTINO = inglés
 NIVEL = principiante
 FRASES = 15
 TIPO = demostrativo
-USO = señalar objetos cercanos
+SENTIDO = señalar objetos cercanos
 ```
 
-`TIPO` y `USO` son opcionales cuando la función es inequívoca. Si el determinante cambia según género, número, sonido o clase del sustantivo, escoger las formas que el nivel requiera practicar. Si el usuario solicita varios objetivos, crear un archivo por objetivo o sentido, salvo que pida una comparación explícita.
+`NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`). `TIPO` y `SENTIDO` son opcionales cuando la función es inequívoca. Si el determinante cambia según género, número, sonido o clase del sustantivo, escoger las formas que el nivel requiera practicar. Si el usuario solicita varios objetivos, crear un archivo por objetivo o sentido, salvo que pida una comparación explícita.
 
 ## Formato del CSV
 

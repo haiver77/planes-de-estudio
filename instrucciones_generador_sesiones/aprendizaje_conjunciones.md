@@ -34,10 +34,10 @@ IDIOMA_DESTINO = inglés
 NIVEL = intermedio
 FRASES = 15
 TIPO = subordinante concesiva
-FUNCION = introducir una idea que contrasta con la principal
+SENTIDO = introducir una idea que contrasta con la principal
 ```
 
-`TIPO` y `FUNCION` son opcionales si el uso es inequívoco. Para construcciones correlativas, especificar el par completo. Si una forma tiene múltiples funciones, definir el sentido antes de crear los ejemplos; separar los usos en archivos distintos, salvo que el usuario solicite compararlos.
+`NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`). `TIPO` y `SENTIDO` son opcionales si el uso es inequívoco. Para construcciones correlativas, especificar el par completo. Si una forma tiene múltiples funciones, definir el sentido antes de crear los ejemplos; separar los usos en archivos distintos, salvo que el usuario solicite compararlos.
 
 ## Formato del CSV
 

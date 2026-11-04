@@ -19,61 +19,61 @@ La prioridad es la repetición comprensible y gradual, no la creatividad ni la v
 
 ---
 
-# Formato del CSV
+## Formato del CSV
 
-Cada fila debe contener exactamente dos columnas separadas por punto y coma (`;`).
+Cada fila debe contener exactamente dos columnas separadas por punto y coma (`;`), sin encabezado ni filas vacías. La primera columna contiene el texto en el idioma nativo y la segunda su traducción al idioma destino. No usar punto y coma dentro de una frase.
 
 ```text
-Texto en idioma nativo;Texto en idioma objetivo
+Texto en idioma nativo;Texto en idioma destino
 ```
-
-Ejemplo:
 
 ```text
 Yo manejo el estrés.;I cope with stress.
-```
-
-```text
 Me resulta difícil concentrarme.;I find it difficult to concentrate.
-```
-
-```text
 Depende de la situación.;It depends on the situation.
 ```
 
----
+## Parámetros de entrada
 
-# Parámetros de Entrada
+Los siguientes parámetros serán proporcionados al agente durante la ejecución. Si falta el objetivo o alguno de los idiomas, pedir aclaración en vez de inventarlos. `FRASES` indica la cantidad de frases emparejadas y no incluye la fila inicial con el objetivo. Si no se especifica, usar la cantidad recomendada para la familia correspondiente.
 
-Los siguientes parámetros serán proporcionados al agente durante la ejecución.
+```text
+ELEMENTO = depends on
+IDIOMA_NATIVO = español
+IDIOMA_DESTINO = inglés
+NIVEL = A2
+FRASES = 15
+TIPO = fixed_expression
+SENTIDO = (opcional)
+```
 
-## Idiomas
+### Idiomas
 
 ```text
 IDIOMA_NATIVO
-IDIOMA_OBJETIVO
+IDIOMA_DESTINO
 ```
 
 Ejemplos:
 
 ```text
 IDIOMA_NATIVO = español
-IDIOMA_OBJETIVO = inglés
+IDIOMA_DESTINO = inglés
 ```
 
 ```text
 IDIOMA_NATIVO = español
-IDIOMA_OBJETIVO = italiano
+IDIOMA_DESTINO = italiano
 ```
 
 ```text
 IDIOMA_NATIVO = inglés
-IDIOMA_OBJETIVO = francés
+IDIOMA_DESTINO = francés
 ```
 
 ---
 
-## Nivel
+### Nivel
 
 ```text
 NIVEL
@@ -82,6 +82,9 @@ NIVEL
 Posibles valores:
 
 ```text
+principiante
+intermedio
+avanzado
 A1
 A2
 B1
@@ -94,17 +97,15 @@ El vocabulario y complejidad gramatical deben ajustarse estrictamente al nivel s
 
 ---
 
-## Tipo de Sesión
+### Tipo de sesión
 
 ```text
-TIPO_SESION
+TIPO
 ```
 
 Posibles valores:
 
 ```text
-verbo
-objeto
 phrasal_verb
 grammar_pattern
 quantity_expression
@@ -114,7 +115,7 @@ fixed_expression
 
 ---
 
-## Elemento Objetivo
+### Elemento objetivo
 
 ```text
 ELEMENTO
@@ -134,19 +135,27 @@ be supposed to
 
 ---
 
-## Cantidad de Frases
+### Cantidad de frases
 
 ```text
-CANTIDAD_FRASES
+FRASES
 ```
 
-El generador debe producir aproximadamente esta cantidad de frases.
+El generador debe producir la cantidad indicada de frases emparejadas, además de la fila inicial del objetivo.
+
+### Sentido (opcional)
+
+```text
+SENTIDO
+```
+
+Precisa el significado o uso cuando la expresión sea polisémica.
 
 ---
 
-# Reglas Generales
+## Reglas generales
 
-## Repetición Dirigida
+### Repetición dirigida
 
 La expresión objetivo debe aparecer repetidamente durante toda la sesión.
 
@@ -156,7 +165,7 @@ La exposición repetida es obligatoria.
 
 ---
 
-## Aprendizaje Incremental
+### Aprendizaje incremental
 
 Cada nueva frase debe introducir como máximo:
 
@@ -174,7 +183,7 @@ Nunca introducir muchos conceptos nuevos en la misma frase.
 
 ---
 
-## Comprensibilidad
+### Comprensibilidad
 
 Las frases deben ser:
 
@@ -186,7 +195,7 @@ Las frases deben ser:
 
 ---
 
-## Longitud
+### Longitud
 
 Preferir:
 
@@ -204,7 +213,7 @@ Evitar oraciones innecesariamente complejas.
 
 ---
 
-## Naturalidad
+### Naturalidad
 
 Las frases deben sonar naturales para hablantes nativos.
 
@@ -212,7 +221,7 @@ No generar ejemplos artificiales únicamente para cumplir una estructura.
 
 ---
 
-## Traducción
+### Traducción
 
 La traducción debe:
 
@@ -225,7 +234,7 @@ La traducción debe:
 
 ---
 
-## Temáticas Preferidas
+### Temáticas preferidas
 
 Priorizar contextos relacionados con:
 
@@ -246,9 +255,9 @@ ocio
 
 ---
 
-# FAMILIA 1: PHRASAL VERBS Y EXPRESIONES VERBALES
+## Familia 1: phrasal verbs y expresiones verbales
 
-## Descripción
+### Descripción
 
 Expresiones centradas en acciones.
 
@@ -270,7 +279,7 @@ rely on sth
 respond to sth
 ```
 
-## Objetivo de Aprendizaje
+### Objetivo de aprendizaje
 
 El estudiante debe aprender la expresión como una unidad indivisible.
 
@@ -278,9 +287,9 @@ No debe intentar traducir cada palabra por separado.
 
 Debe reconocer automáticamente el significado general y el contexto adecuado para utilizarla.
 
-## Patrón de Generación
+### Patrón de generación
 
-### Etapa 1
+#### Etapa 1
 
 Presentación de la expresión.
 
@@ -289,7 +298,7 @@ Expresión
 Traducción
 ```
 
-### Etapa 2
+#### Etapa 2
 
 Frases mínimas.
 
@@ -299,7 +308,7 @@ Frase simple 2
 Frase simple 3
 ```
 
-### Etapa 3
+#### Etapa 3
 
 Variaciones controladas.
 
@@ -314,7 +323,7 @@ tiempo
 
 manteniendo la expresión principal.
 
-### Etapa 4
+#### Etapa 4
 
 Contextos cotidianos.
 
@@ -324,25 +333,23 @@ escuela
 trabajo
 ```
 
-### Etapa 5
+#### Etapa 5
 
 Situaciones reales.
 
-### Etapa 6
+#### Etapa 6
 
 Pregunta y respuesta.
 
-## Cantidad Recomendada
+### Cantidad recomendada
 
 ```text
 12 a 18 frases
 ```
 
----
+## Familia 2: patrones gramaticales
 
-# FAMILIA 2: PATRONES GRAMATICALES
-
-## Descripción
+### Descripción
 
 Estructuras reutilizables con componentes variables.
 
@@ -361,13 +368,13 @@ seek to do sth
 tend to do sth
 ```
 
-## Objetivo de Aprendizaje
+### Objetivo de aprendizaje
 
 El estudiante debe dominar la estructura completa y reutilizarla con diferentes verbos y sujetos.
 
-## Patrón de Generación
+### Patrón de generación
 
-### Etapa 1
+#### Etapa 1
 
 Presentación del patrón.
 
@@ -376,11 +383,11 @@ Patrón
 Significado
 ```
 
-### Etapa 2
+#### Etapa 2
 
 Misma estructura con verbos diferentes.
 
-### Etapa 3
+#### Etapa 3
 
 Misma estructura con sujetos diferentes.
 
@@ -393,15 +400,15 @@ We
 They
 ```
 
-### Etapa 4
+#### Etapa 4
 
 Aplicación en situaciones reales.
 
-### Etapa 5
+#### Etapa 5
 
 Pregunta y respuesta.
 
-## Cantidad Recomendada
+### Cantidad recomendada
 
 ```text
 15 a 20 frases
@@ -409,9 +416,9 @@ Pregunta y respuesta.
 
 ---
 
-# FAMILIA 3: EXPRESIONES DE CANTIDAD Y FRECUENCIA
+## Familia 3: expresiones de cantidad y frecuencia
 
-## Descripción
+### Descripción
 
 Expresiones relacionadas con cantidad, frecuencia o intensidad.
 
@@ -429,17 +436,17 @@ far too
 x times a week
 ```
 
-## Objetivo de Aprendizaje
+### Objetivo de aprendizaje
 
 Asociar la expresión con cantidades reales y usos frecuentes.
 
-## Patrón de Generación
+### Patrón de generación
 
-### Etapa 1
+#### Etapa 1
 
 Presentación de la expresión.
 
-### Etapa 2
+#### Etapa 2
 
 Expresión más sustantivo.
 
@@ -449,19 +456,19 @@ lots of books
 lots of students
 ```
 
-### Etapa 3
+#### Etapa 3
 
 Oraciones simples.
 
-### Etapa 4
+#### Etapa 4
 
 Contextos cotidianos.
 
-### Etapa 5
+#### Etapa 5
 
 Comparaciones simples.
 
-## Cantidad Recomendada
+### Cantidad recomendada
 
 ```text
 12 a 15 frases
@@ -469,9 +476,9 @@ Comparaciones simples.
 
 ---
 
-# FAMILIA 4: CONECTORES Y MARCADORES DISCURSIVOS
+## Familia 4: conectores y marcadores discursivos
 
-## Descripción
+### Descripción
 
 Expresiones utilizadas para conectar ideas o expresar relaciones lógicas.
 
@@ -487,17 +494,17 @@ instead of
 in my opinion
 ```
 
-## Objetivo de Aprendizaje
+### Objetivo de aprendizaje
 
 Comprender la función comunicativa del conector y aplicarlo correctamente.
 
-## Patrón de Generación
+### Patrón de generación
 
-### Etapa 1
+#### Etapa 1
 
 Presentación del conector.
 
-### Etapa 2
+#### Etapa 2
 
 Dos ideas relacionadas mediante el conector.
 
@@ -507,15 +514,15 @@ Conector
 Idea B
 ```
 
-### Etapa 3
+#### Etapa 3
 
 Oraciones completas.
 
-### Etapa 4
+#### Etapa 4
 
 Contextos progresivamente más complejos.
 
-### Etapa 5
+#### Etapa 5
 
 Mini situaciones.
 
@@ -533,7 +540,7 @@ idea → contraste
 
 según corresponda.
 
-## Cantidad Recomendada
+### Cantidad recomendada
 
 ```text
 10 a 15 frases
@@ -541,9 +548,9 @@ según corresponda.
 
 ---
 
-# FAMILIA 5: EXPRESIONES FIJAS Y BLOQUES CONVERSACIONALES
+## Familia 5: expresiones fijas y bloques conversacionales
 
-## Descripción
+### Descripción
 
 Expresiones utilizadas como unidades completas dentro de conversaciones cotidianas.
 
@@ -561,17 +568,17 @@ how about...?
 what about...?
 ```
 
-## Objetivo de Aprendizaje
+### Objetivo de aprendizaje
 
 Desarrollar respuestas automáticas y naturales en conversaciones.
 
-## Patrón de Generación
+### Patrón de generación
 
-### Etapa 1
+#### Etapa 1
 
 Presentación de la expresión.
 
-### Etapa 2
+#### Etapa 2
 
 Uso mínimo.
 
@@ -579,19 +586,19 @@ Uso mínimo.
 It depends.
 ```
 
-### Etapa 3
+#### Etapa 3
 
 Uso contextual.
 
-### Etapa 4
+#### Etapa 4
 
 Mini diálogos.
 
-### Etapa 5
+#### Etapa 5
 
 Conversaciones cotidianas.
 
-## Cantidad Recomendada
+### Cantidad recomendada
 
 ```text
 10 a 15 frases
@@ -599,7 +606,7 @@ Conversaciones cotidianas.
 
 ---
 
-# Patrón Universal de Respaldo
+## Patrón universal de respaldo
 
 Cuando una expresión no encaje claramente en una familia específica, utilizar el siguiente patrón universal.
 
@@ -631,7 +638,7 @@ Cuando una expresión no encaje claramente en una familia específica, utilizar 
 
 ---
 
-# Principio Fundamental
+## Principio fundamental
 
 El objetivo principal no es que el estudiante vea muchas frases diferentes.
 

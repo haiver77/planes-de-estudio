@@ -47,7 +47,12 @@ IDIOMA_NATIVO = español
 IDIOMA_DESTINO = inglés
 NIVEL = principiante
 FRASES = 15
+TIPO = contable
+SENTIDO = objeto para leer
 ```
+
+- `NIVEL`: `principiante`, `intermedio` o `avanzado` (también se acepta `A1`–`C2`).
+- `TIPO` y `SENTIDO` son opcionales. Usarlos si el sustantivo es polisémico o su categoría (contable, incontable, abstracto, etc.) requiere precisión.
 
 Otros ejemplos de objetivos válidos:
 
