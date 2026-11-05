@@ -132,6 +132,12 @@ mañana, yo corro una carrera.
 - Mantener el mismo tiempo verbal dentro de un bloque.
 - Mantener el mismo sujeto durante todo el bloque.
 - Mantener el mismo verbo objetivo durante todo el archivo.
+- En idiomas que distinguen el género de los pronombres personales, como el español y el italiano, incluir explícitamente el pronombre de sujeto en ambas frases, aunque el idioma permita omitirlo. La traducción debe conservar el género y el número del sujeto siempre que el idioma destino los distinga.
+
+```text
+ella puede hablar ahora.;Lei può parlare adesso.
+ellos pueden entrar.;Loro possono entrare.
+```
 
 ### Naturalidad
 
