@@ -1,0 +1,9 @@
+- **Nombre del curso**: ESIT-Pilares_del_Italiano
+- **Idioma nativo**: Español
+- **idioma destino**: Italiano
+- **Vocabulario foco**: #pilares_italiano.csv
+- **Criterio para dividirlo en unidades**: El archivo #pilares_italiano.csv tiene 4 columnas. 1. numeración por categoría, 2. Categoría, 3. Vocabulario foco en Español, 4. Vocabulario foco en Italiano. Crea una unidad para cada "Categoría".
+- **Nivel**: A1 
+- **Cantidad de frases por vocabulario**: 3 frases muy cortas por cada vocabulario foco aparte del vocabulario foco individual.
+- **Consideraciones específicas**: Uso de vocabulario simple y básico A1.
+- **Cantidad de agentes generador csv paralelos**: 1

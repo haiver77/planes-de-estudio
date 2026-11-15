@@ -1,0 +1,164 @@
+N_Categoria,Categoria,Chunk,Traduccion_Espanol
+1,Estado o accion actual (I'm),I'm fine thanks,Estoy bien gracias
+2,Estado o accion actual (I'm),I'm not sure,No estoy seguro
+3,Estado o accion actual (I'm),I'm on my way,Voy en camino
+4,Estado o accion actual (I'm),I'm almost there,Ya casi llego
+5,Estado o accion actual (I'm),I'm running late,Voy tarde
+6,Estado o accion actual (I'm),I'm in a hurry,Tengo prisa
+7,Estado o accion actual (I'm),I'm so tired,Estoy muy cansado
+8,Estado o accion actual (I'm),I'm starving,Me muero de hambre
+9,Estado o accion actual (I'm),I'm just looking,Solo estoy mirando
+13,Estado o accion actual (I'm),I'm done,Ya terminé
+14,Estado o accion actual (I'm),I'm almost done,Ya casi termino
+17,Estado o accion actual (I'm),I'm so sorry,Lo siento mucho
+18,Estado o accion actual (I'm),I'm not feeling well,No me siento bien
+19,Estado o accion actual (I'm),I'm a bit busy right now,Estoy un poco ocupado ahora
+21,Estado o accion actual (I'm),I'm good,Estoy bien
+27,Estado o accion actual (I'm),I'm here,Aquí estoy
+28,Estado o accion actual (I'm),I'm confused,Estoy confundido
+29,Estado o accion actual (I'm),I'm excited,Estoy emocionado
+30,Estado o accion actual (I'm),I'm nervous,Estoy nervioso
+32,Estado o accion actual (I'm),I'm ready,Estoy listo
+33,Estado o accion actual (I'm),I'm not ready yet,Todavía no estoy listo
+40,Estado o accion actual (I'm),I'm happy for you,Me alegro por ti
+1,Describir cosa o situacion (It's),It's fine,Está bien
+2,Describir cosa o situacion (It's),It's okay,Está bien / No pasa nada
+3,Describir cosa o situacion (It's),It's not a problem,No es un problema
+4,Describir cosa o situacion (It's),It's up to you,Tú decides
+5,Describir cosa o situacion (It's),It doesn't matter,No importa
+8,Describir cosa o situacion (It's),It's getting late,Se está haciendo tarde
+13,Describir cosa o situacion (It's),It's not fair,No es justo
+14,Describir cosa o situacion (It's),It's too late,Es demasiado tarde
+15,Describir cosa o situacion (It's),It's too expensive,Es demasiado caro
+24,Describir cosa o situacion (It's),It's raining,Está lloviendo
+25,Describir cosa o situacion (It's),It's freezing outside,Hace mucho frío afuera
+26,Describir cosa o situacion (It's),It's beautiful,Es precioso
+27,Describir cosa o situacion (It's),It's broken,Está roto
+28,Describir cosa o situacion (It's),It's ready,Está listo
+31,Describir cosa o situacion (It's),It's close by,Está cerca
+32,Describir cosa o situacion (It's),It's far from here,Está lejos de aquí
+33,Describir cosa o situacion (It's),It's easy,Es fácil
+39,Describir cosa o situacion (It's),It's time to go,Es hora de irse
+1,Ofertas promesas y decisiones (I'll),I'll be right back,Vuelvo enseguida
+5,Ofertas promesas y decisiones (I'll),I'll give you a call,Te llamo
+6,Ofertas promesas y decisiones (I'll),I'll think about it,Lo pensaré
+9,Ofertas promesas y decisiones (I'll),I'll pick you up,Paso a recogerte
+11,Ofertas promesas y decisiones (I'll),I'll send it over,Te lo envío
+12,Ofertas promesas y decisiones (I'll),I'll meet you there,Nos vemos allí
+15,Ofertas promesas y decisiones (I'll),I'll be there soon,Llego pronto
+16,Ofertas promesas y decisiones (I'll),I'll call you back,Te devuelvo la llamada
+20,Ofertas promesas y decisiones (I'll),I'll take it,Me lo llevo
+23,Ofertas promesas y decisiones (I'll),I'll wait for you,Te espero
+24,Ofertas promesas y decisiones (I'll),I'll text you,Te escribo
+26,Ofertas promesas y decisiones (I'll),I'll remember that,Lo recordaré
+32,Ofertas promesas y decisiones (I'll),I'll do it right away,Lo hago enseguida
+33,Ofertas promesas y decisiones (I'll),I'll come with you,Voy contigo
+34,Ofertas promesas y decisiones (I'll),I'll pay for it,Yo lo pago
+39,Ofertas promesas y decisiones (I'll),I'll see you soon,Nos vemos pronto
+1,Sugerir hacer algo juntos (Let's),Let's go,Vamos
+3,Sugerir hacer algo juntos (Let's),Let's do it,Hagámoslo
+7,Sugerir hacer algo juntos (Let's),Let's talk later,Hablamos luego
+12,Sugerir hacer algo juntos (Let's),Let's take a break,Tomemos un descanso
+14,Sugerir hacer algo juntos (Let's),Let's grab a coffee,Vamos por un café
+18,Sugerir hacer algo juntos (Let's),Let's see,Veamos
+22,Sugerir hacer algo juntos (Let's),Let's try again,Intentémoslo de nuevo
+23,Sugerir hacer algo juntos (Let's),Let's make a plan,Hagamos un plan
+24,Sugerir hacer algo juntos (Let's),Let's eat,Comamos
+25,Sugerir hacer algo juntos (Let's),Let's get out of here,Salgamos de aquí
+35,Sugerir hacer algo juntos (Let's),Let's celebrate,Celebremos
+5,Incapacidad o limites (I can't),I can't hear you,No te oigo
+7,Incapacidad o limites (I can't),I can't remember,No me acuerdo
+14,Incapacidad o limites (I can't),I can't find it,No lo encuentro
+18,Incapacidad o limites (I can't),I can't stay long,No puedo quedarme mucho
+19,Incapacidad o limites (I can't),I can't sleep,No puedo dormir
+20,Incapacidad o limites (I can't),I can't focus,No me puedo concentrar
+34,Incapacidad o limites (I can't),I can't open it,No lo puedo abrir
+1,Reaccionar y evaluar (That's),That's great,Qué bien / Genial
+2,Reaccionar y evaluar (That's),That's right,Así es / Correcto
+4,Reaccionar y evaluar (That's),That's too bad,Qué lástima
+5,Reaccionar y evaluar (That's),That sounds great,Suena genial
+8,Reaccionar y evaluar (That's),That's interesting,Qué interesante
+15,Reaccionar y evaluar (That's),That's a good idea,Es buena idea
+20,Reaccionar y evaluar (That's),That's enough,Ya es suficiente
+24,Reaccionar y evaluar (That's),That's not fair,Eso no es justo
+25,Reaccionar y evaluar (That's),That depends,Depende
+26,Reaccionar y evaluar (That's),That's perfect,Es perfecto
+27,Reaccionar y evaluar (That's),That's weird,Qué raro
+28,Reaccionar y evaluar (That's),That's a lot,Es bastante
+32,Reaccionar y evaluar (That's),That's it,Eso es
+33,Reaccionar y evaluar (That's),That's all,Eso es todo
+34,Reaccionar y evaluar (That's),That's funny,Qué gracioso
+1,Pedir un momento u ofrecer ayuda (Let me),Let me check,Déjame revisar
+2,Pedir un momento u ofrecer ayuda (Let me),Let me help you,Déjame ayudarte
+3,Pedir un momento u ofrecer ayuda (Let me),Let me know,Avísame
+4,Pedir un momento u ofrecer ayuda (Let me),Let me explain,Déjame explicarte
+9,Pedir un momento u ofrecer ayuda (Let me),Let me show you,Déjame mostrarte
+10,Pedir un momento u ofrecer ayuda (Let me),Let me try again,Déjame intentarlo de nuevo
+15,Pedir un momento u ofrecer ayuda (Let me),Let me see,A ver / Déjame ver
+16,Pedir un momento u ofrecer ayuda (Let me),Let me guess,Déjame adivinar
+17,Pedir un momento u ofrecer ayuda (Let me),Let me grab my things,Déjame coger mis cosas
+23,Pedir un momento u ofrecer ayuda (Let me),Let me pay this time,Déjame pagar esta vez
+28,Pedir un momento u ofrecer ayuda (Let me),Let me ask,Déjame preguntar
+30,Pedir un momento u ofrecer ayuda (Let me),Let me grab a pen,Déjame coger un bolígrafo
+32,Pedir un momento u ofrecer ayuda (Let me),Let me get ready,Déjame prepararme
+33,Pedir un momento u ofrecer ayuda (Let me),Let me sit down,Déjame sentarme
+37,Pedir un momento u ofrecer ayuda (Let me),Let me buy you a coffee,Déjame invitarte un café
+3,Deseos y preferencias (I'd),I'd rather not,Prefiero que no
+4,Deseos y preferencias (I'd),I'd like that,Me gustaría
+6,Deseos y preferencias (I'd),I'd better go,Mejor me voy
+10,Deseos y preferencias (I'd),I'd rather stay home,Prefiero quedarme en casa
+11,Deseos y preferencias (I'd),I'd love to come,Me encantaría ir
+12,Deseos y preferencias (I'd),I'd like a coffee please,Me gustaría un café por favor
+15,Deseos y preferencias (I'd),I'd like to try,Me gustaría intentarlo
+16,Deseos y preferencias (I'd),I'd rather walk,Prefiero caminar
+25,Deseos y preferencias (I'd),I'd like to help,Me gustaría ayudar
+29,Deseos y preferencias (I'd),I'd like to see it,Me gustaría verlo
+1,Obligacion (I need to / I have to),I have to go,Me tengo que ir
+2,Obligacion (I need to / I have to),I need a minute,Necesito un minuto
+4,Obligacion (I need to / I have to),I need your help,Necesito tu ayuda
+7,Obligacion (I need to / I have to),I have to finish this,Tengo que terminar esto
+8,Obligacion (I need to / I have to),I need to think,Necesito pensar
+10,Obligacion (I need to / I have to),I need some time,Necesito algo de tiempo
+14,Obligacion (I need to / I have to),I need to rest,Necesito descansar
+17,Obligacion (I need to / I have to),I have to leave now,Me tengo que ir ya
+18,Obligacion (I need to / I have to),I need to sleep,Necesito dormir
+19,Obligacion (I need to / I have to),I have to work tomorrow,Tengo que trabajar mañana
+21,Obligacion (I need to / I have to),I have to ask,Tengo que preguntar
+22,Obligacion (I need to / I have to),I need to get ready,Tengo que prepararme
+24,Obligacion (I need to / I have to),I need to talk to you,Necesito hablar contigo
+25,Obligacion (I need to / I have to),I have to be there by eight,Tengo que estar allí a las ocho
+26,Obligacion (I need to / I have to),I need to save money,Necesito ahorrar dinero
+30,Obligacion (I need to / I have to),I need to be careful,Tengo que tener cuidado
+31,Obligacion (I need to / I have to),I have to get up early,Tengo que levantarme temprano
+37,Obligacion (I need to / I have to),I have to charge my phone,Tengo que cargar el teléfono
+1,Peticiones corteses (Could you / Would you),Could you help me,¿Podrías ayudarme?
+2,Peticiones corteses (Could you / Would you),Could you repeat that,¿Podrías repetir eso?
+3,Peticiones corteses (Could you / Would you),Could you speak slower,¿Podrías hablar más despacio?
+5,Peticiones corteses (Could you / Would you),Could you give me a minute,¿Podrías darme un minuto?
+7,Peticiones corteses (Could you / Would you),Could you pass me the salt,¿Podrías pasarme la sal?
+8,Peticiones corteses (Could you / Would you),Would you like something to drink,¿Te gustaría algo de beber?
+11,Peticiones corteses (Could you / Would you),Could you hold on a second,¿Podrías esperar un segundo?
+13,Peticiones corteses (Could you / Would you),Could you show me how,¿Podrías enseñarme cómo?
+14,Peticiones corteses (Could you / Would you),Would you prefer tea or coffee,¿Prefieres té o café?
+16,Peticiones corteses (Could you / Would you),Could you turn it down,¿Podrías bajarlo?
+17,Peticiones corteses (Could you / Would you),Could you open the window,¿Podrías abrir la ventana?
+19,Peticiones corteses (Could you / Would you),Could you explain that again,¿Podrías explicar eso de nuevo?
+24,Peticiones corteses (Could you / Would you),Would you close the door please,¿Podrías cerrar la puerta por favor?
+27,Peticiones corteses (Could you / Would you),Could you wait a moment,¿Podrías esperar un momento?
+32,Peticiones corteses (Could you / Would you),Would you like a hand,¿Quieres que te ayude?
+35,Peticiones corteses (Could you / Would you),Could you take a photo,¿Podrías tomar una foto?
+37,Peticiones corteses (Could you / Would you),Could you do that again,¿Podrías hacer eso otra vez?
+1,Expresiones fijas,no worries,No te preocupes
+2,Expresiones fijas,no problem,No hay problema
+3,Expresiones fijas,you're welcome,De nada
+5,Expresiones fijas,never mind,No importa / Olvídalo
+6,Expresiones fijas,take your time,Tómate tu tiempo
+7,Expresiones fijas,sounds good,Me parece bien
+11,Expresiones fijas,of course,Por supuesto
+12,Expresiones fijas,by the way,Por cierto
+14,Expresiones fijas,more or less,Más o menos
+18,Expresiones fijas,hang on,Espera un momento
+19,Expresiones fijas,here you go,Aquí tienes
+20,Expresiones fijas,not at all,Para nada
+25,Expresiones fijas,just kidding,Solo bromeaba
+38,Expresiones fijas,no rush,Sin prisa

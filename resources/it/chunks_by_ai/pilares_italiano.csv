@@ -1,0 +1,341 @@
+N_Categoria;Categoria;Traduccion_Espanol;Traduccion_Italiano
+1;Saluti e cortesia;Hola / Chao;Ciao
+2;Saluti e cortesia;Buenos dias;Buongiorno
+3;Saluti e cortesia;Buenas tardes;Buonasera
+4;Saluti e cortesia;Buenas noches;Buonanotte
+5;Saluti e cortesia;Adios;Arrivederci
+6;Saluti e cortesia;Gracias;Grazie
+7;Saluti e cortesia;De nada;Prego
+8;Saluti e cortesia;Por favor;Per favore
+9;Saluti e cortesia;Perdon (informal);Scusa
+10;Saluti e cortesia;Lo siento;Mi dispiace
+11;Saluti e cortesia;Hola / Buenas (formal);Salve
+12;Saluti e cortesia;Muchas gracias;Grazie mille
+1;Pronomi personali;yo;io
+2;Pronomi personali;tu;tu
+3;Pronomi personali;el;lui
+4;Pronomi personali;ella / usted;lei
+5;Pronomi personali;nosotros;noi
+6;Pronomi personali;vosotros / ustedes;voi
+7;Pronomi personali;ellos;loro
+1;Articoli;el (m.);il
+2;Articoli;el (antes de s+cons / z);lo
+3;Articoli;la (f.);la
+4;Articoli;los (m. pl.);i
+5;Articoli;los (m. pl. especial);gli
+6;Articoli;las (f. pl.);le
+7;Articoli;un (m.);un
+8;Articoli;un (antes de s+cons / z);uno
+9;Articoli;una (f.);una
+10;Articoli;el / la (antes de vocal);l'
+1;Verbi essenziali - Essere;soy / estoy;sono
+2;Verbi essenziali - Essere;eres / estas;sei
+3;Verbi essenziali - Essere;es / esta;è
+4;Verbi essenziali - Essere;somos / estamos;siamo
+5;Verbi essenziali - Essere;sois / estais;siete
+6;Verbi essenziali - Essere;son / estan (ellos);sono
+1;Verbi essenziali - Avere;tengo;ho
+2;Verbi essenziali - Avere;tienes;hai
+3;Verbi essenziali - Avere;tiene;ha
+4;Verbi essenziali - Avere;tenemos;abbiamo
+5;Verbi essenziali - Avere;teneis;avete
+6;Verbi essenziali - Avere;tienen;hanno
+1;Domande di base;Como estas;Come stai
+2;Domande di base;Como te llamas;Come ti chiami
+3;Domande di base;De donde eres;Di dove sei
+4;Domande di base;Donde vives;Dove vivi
+5;Domande di base;Que haces;Che cosa fai
+6;Domande di base;Por que;Perché
+7;Domande di base;Cuando;Quando
+8;Domande di base;Como;Come
+9;Domande di base;Cuanto cuesta;Quanto costa
+10;Domande di base;Que;Cosa
+1;Strutture di base;Estoy cansado;Io sono stanco
+2;Strutture di base;Estoy feliz;Io sono felice
+3;Strutture di base;Soy peruano;Io sono peruviano
+4;Strutture di base;Tengo hambre;Io ho fame
+5;Strutture di base;Tengo sed;Io ho sete
+6;Strutture di base;Tengo tiempo;Io ho tempo
+7;Strutture di base;Me gusta el futbol;Mi piace il calcio
+8;Strutture di base;Me gusta la pizza;Mi piace la pizza
+9;Strutture di base;Me gusta estudiar italiano;Mi piace studiare italiano
+1;Verbi modali - Volere, Potere, Dovere;quiero;voglio
+2;Verbi modali - Volere, Potere, Dovere;quieres;vuoi
+3;Verbi modali - Volere, Potere, Dovere;quiere;vuole
+4;Verbi modali - Volere, Potere, Dovere;quisiera (cortes);vorrei
+5;Verbi modali - Volere, Potere, Dovere;puedo;posso
+6;Verbi modali - Volere, Potere, Dovere;puedes;puoi
+7;Verbi modali - Volere, Potere, Dovere;puede;può
+8;Verbi modali - Volere, Potere, Dovere;tengo que / debo;devo
+9;Verbi modali - Volere, Potere, Dovere;tienes que / debes;devi
+10;Verbi modali - Volere, Potere, Dovere;tiene que / debe;deve
+1;Verbi utili - Azioni quotidiane;ir;andare
+2;Verbi utili - Azioni quotidiane;voy;vado
+3;Verbi utili - Azioni quotidiane;venir;venire
+4;Verbi utili - Azioni quotidiane;vengo;vengo
+5;Verbi utili - Azioni quotidiane;estar;stare
+6;Verbi utili - Azioni quotidiane;estoy;sto
+7;Verbi utili - Azioni quotidiane;hablar;parlare
+8;Verbi utili - Azioni quotidiane;hablo;parlo
+9;Verbi utili - Azioni quotidiane;comer;mangiare
+10;Verbi utili - Azioni quotidiane;como;mangio
+11;Verbi utili - Azioni quotidiane;beber;bere
+12;Verbi utili - Azioni quotidiane;bebo;bevo
+13;Verbi utili - Azioni quotidiane;querer (desear);volere
+14;Verbi utili - Azioni quotidiane;quiero;voglio
+15;Verbi utili - Azioni quotidiane;entender;capire
+16;Verbi utili - Azioni quotidiane;entiendo;capisco
+17;Verbi utili - Azioni quotidiane;saber;sapere
+18;Verbi utili - Azioni quotidiane;se;so
+19;Verbi utili - Azioni quotidiane;ver;vedere
+20;Verbi utili - Azioni quotidiane;veo;vedo
+21;Verbi utili - Azioni quotidiane;decir;dire
+22;Verbi utili - Azioni quotidiane;digo;dico
+23;Verbi utili - Azioni quotidiane;dar;dare
+24;Verbi utili - Azioni quotidiane;doy;do
+1;Preposizioni di base;de / desde;di
+2;Preposizioni di base;a / en (ciudad);a
+3;Preposizioni di base;de / desde (origen);da
+4;Preposizioni di base;en / dentro;in
+5;Preposizioni di base;sobre / encima;su
+6;Preposizioni di base;para / por;per
+7;Preposizioni di base;entre;tra
+8;Preposizioni di base;entre (variante);fra
+9;Preposizioni di base;del;del
+10;Preposizioni di base;en el;nel
+11;Preposizioni di base;en la;nella
+12;Preposizioni di base;al;al
+13;Preposizioni di base;a la;alla
+1;Connettori di base;y;e
+2;Connettori di base;o;o
+3;Connettori di base;pero;ma
+4;Connettori di base;porque;perché
+5;Connettori di base;tambien;anche
+6;Connettori di base;muy;molto
+7;Connettori di base;un poco;un po'
+8;Connettori di base;siempre;sempre
+9;Connettori di base;nunca;mai
+10;Connettori di base;aqui;qui
+11;Connettori di base;alli;lì
+12;Connettori di base;con;con
+13;Connettori di base;sin;senza
+14;Connettori di base;si;se
+15;Connettori di base;entonces;allora
+16;Connettori di base;además;inoltre
+17;Connettori di base;mas;più
+18;Connettori di base;menos;meno
+19;Connettori di base;como;come
+20;Connettori di base;cuando;quando
+1;Verbi essenziali - Fare;hago;faccio
+2;Verbi essenziali - Fare;haces;fai
+3;Verbi essenziali - Fare;hace;fa
+4;Verbi essenziali - Fare;hacemos;facciamo
+5;Verbi essenziali - Fare;haceis;fate
+6;Verbi essenziali - Fare;hacen;fanno
+1;Frasi complete quotidiane;Me llamo John;Mi chiamo John
+2;Frasi complete quotidiane;Soy de Peru;Sono del Perù
+3;Frasi complete quotidiane;Vivo en Lima;Vivo a Lima
+4;Frasi complete quotidiane;Trabajo como arquitecto;Lavoro come architetto
+5;Frasi complete quotidiane;Estoy aprendiendo italiano;Sto imparando l'italiano
+6;Frasi complete quotidiane;No entiendo;Non capisco
+7;Frasi complete quotidiane;Puedes repetir por favor;Puoi ripetere per favore
+8;Frasi complete quotidiane;Hablas mas despacio;Parli più lentamente
+9;Frasi complete quotidiane;Como se dice en italiano;Come si dice in italiano
+10;Frasi complete quotidiane;Que significa;Che significa
+11;Frasi complete quotidiane;Y tu;E tu
+1;Parole quotidiane;hoy;oggi
+2;Parole quotidiane;ayer;ieri
+3;Parole quotidiane;manana;domani
+4;Parole quotidiane;ahora;adesso
+5;Parole quotidiane;despues;dopo
+6;Parole quotidiane;pronto;presto
+7;Parole quotidiane;amigo;amico
+8;Parole quotidiane;familia;famiglia
+9;Parole quotidiane;chico;ragazzo
+10;Parole quotidiane;chica;ragazza
+11;Parole quotidiane;casa;casa
+12;Parole quotidiane;trabajo;lavoro
+13;Parole quotidiane;escuela;scuola
+14;Parole quotidiane;restaurante;ristorante
+15;Parole quotidiane;mucho;molto
+16;Parole quotidiane;poco;poco
+17;Parole quotidiane;hombre;uomo
+18;Parole quotidiane;mujer;donna
+19;Parole quotidiane;nino;bambino
+20;Parole quotidiane;gente;gente
+21;Parole quotidiane;ciudad;città
+22;Parole quotidiane;calle;strada
+23;Parole quotidiane;tienda;negozio
+24;Parole quotidiane;dinero;soldi
+25;Parole quotidiane;tiempo;tempo
+26;Parole quotidiane;cosa;cosa
+27;Parole quotidiane;bien;bene
+28;Parole quotidiane;mal;male
+29;Parole quotidiane;coche;macchina
+30;Parole quotidiane;telefono;telefono
+31;Parole quotidiane;libro;libro
+32;Parole quotidiane;comida;cibo
+33;Parole quotidiane;nombre;nome
+34;Parole quotidiane;perro;cane
+35;Parole quotidiane;hoy en dia;oggigiorno
+36;Parole quotidiane;madre;madre
+37;Parole quotidiane;padre;padre
+38;Parole quotidiane;hermano;fratello
+39;Parole quotidiane;hermana;sorella
+40;Parole quotidiane;esposa;moglie
+41;Parole quotidiane;esposo;marito
+42;Parole quotidiane;hijo;figlio
+43;Parole quotidiane;hija;figlia
+44;Parole quotidiane;a la izquierda;a sinistra
+45;Parole quotidiane;a la derecha;a destra
+46;Parole quotidiane;recto / derecho;dritto
+47;Parole quotidiane;cerca;vicino
+48;Parole quotidiane;lejos;lontano
+1;Numeri chiave;uno;uno
+2;Numeri chiave;dos;due
+3;Numeri chiave;tres;tre
+4;Numeri chiave;cuatro;quattro
+5;Numeri chiave;cinco;cinque
+6;Numeri chiave;seis;sei
+7;Numeri chiave;siete;sette
+8;Numeri chiave;ocho;otto
+9;Numeri chiave;nueve;nove
+10;Numeri chiave;diez;dieci
+11;Numeri chiave;once;undici
+12;Numeri chiave;doce;dodici
+13;Numeri chiave;trece;tredici
+14;Numeri chiave;catorce;quattordici
+15;Numeri chiave;quince;quindici
+16;Numeri chiave;dieciseis;sedici
+17;Numeri chiave;diecisiete;diciassette
+18;Numeri chiave;dieciocho;diciotto
+19;Numeri chiave;diecinueve;diciannove
+20;Numeri chiave;veinte;venti
+21;Numeri chiave;treinta;trenta
+22;Numeri chiave;cuarenta;quaranta
+23;Numeri chiave;cincuenta;cinquanta
+24;Numeri chiave;sesenta;sessanta
+25;Numeri chiave;setenta;settanta
+26;Numeri chiave;ochenta;ottanta
+27;Numeri chiave;noventa;novanta
+28;Numeri chiave;cien;cento
+1;Giorni mesi e tempo;lunes;lunedì
+2;Giorni mesi e tempo;martes;martedì
+3;Giorni mesi e tempo;miercoles;mercoledì
+4;Giorni mesi e tempo;jueves;giovedì
+5;Giorni mesi e tempo;viernes;venerdì
+6;Giorni mesi e tempo;sabado;sabato
+7;Giorni mesi e tempo;domingo;domenica
+8;Giorni mesi e tempo;dia;giorno
+9;Giorni mesi e tempo;semana;settimana
+10;Giorni mesi e tempo;fin de semana;fine settimana
+11;Giorni mesi e tempo;mes;mese
+12;Giorni mesi e tempo;ano;anno
+13;Giorni mesi e tempo;manana (parte del dia);mattina
+14;Giorni mesi e tempo;noche;notte
+1;L'ora;Que hora es;Che ore sono
+2;L'ora;Es la una;È l'una
+3;L'ora;Son las dos;Sono le due
+4;L'ora;mediodia;mezzogiorno
+5;L'ora;medianoche;mezzanotte
+6;L'ora;y media;e mezza
+7;L'ora;y cuarto;e un quarto
+8;L'ora;menos cuarto;meno un quarto
+9;L'ora;A que hora;A che ora
+1;Cibo e bevande di base;agua;acqua
+2;Cibo e bevande di base;pan;pane
+3;Cibo e bevande di base;cafe;caffè
+4;Cibo e bevande di base;vino;vino
+5;Cibo e bevande di base;cerveza;birra
+6;Cibo e bevande di base;leche;latte
+7;Cibo e bevande di base;pizza;pizza
+8;Cibo e bevande di base;pasta;pasta
+9;Cibo e bevande di base;fruta;frutta
+10;Cibo e bevande di base;carne;carne
+11;Cibo e bevande di base;pescado;pesce
+12;Cibo e bevande di base;queso;formaggio
+13;Cibo e bevande di base;huevo;uovo
+14;Cibo e bevande di base;arroz;riso
+15;Cibo e bevande di base;verdura;verdura
+16;Cibo e bevande di base;ensalada;insalata
+17;Cibo e bevande di base;azucar;zucchero
+18;Cibo e bevande di base;sal;sale
+19;Cibo e bevande di base;helado;gelato
+20;Cibo e bevande di base;te;tè
+21;Cibo e bevande di base;pollo;pollo
+22;Cibo e bevande di base;jamon;prosciutto
+23;Cibo e bevande di base;mantequilla;burro
+24;Cibo e bevande di base;tomate;pomodoro
+25;Cibo e bevande di base;patata;patata
+26;Cibo e bevande di base;manzana;mela
+27;Cibo e bevande di base;naranja (fruta);arancia
+28;Cibo e bevande di base;zumo;succo
+29;Cibo e bevande di base;sopa;zuppa
+30;Cibo e bevande di base;postre;dolce
+1;Frasi per chiedere;Quisiera un cafe;Vorrei un caffè
+2;Frasi per chiedere;Puedo tener la cuenta;Posso avere il conto
+3;Frasi per chiedere;Cuanto cuesta esto;Quanto costa questo
+4;Frasi per chiedere;Un vaso de agua;Un bicchiere d'acqua
+5;Frasi per chiedere;Una botella de vino;Una bottiglia di vino
+6;Frasi per chiedere;Que me recomienda;Cosa mi consiglia
+7;Frasi per chiedere;Quisiera reservar una mesa;Vorrei prenotare un tavolo
+8;Frasi per chiedere;La cuenta por favor;Il conto per favore
+9;Frasi per chiedere;Puedo pagar con tarjeta;Posso pagare con la carta
+1;Emergenze e necessità;Ayuda;Aiuto
+2;Emergenze e necessità;Donde esta el bano;Dov'è il bagno
+3;Emergenze e necessità;Estoy perdido;Mi sono perso
+4;Emergenze e necessità;Llama a un medico;Chiama un medico
+5;Emergenze e necessità;No me siento bien;Non mi sento bene
+6;Emergenze e necessità;Necesito ayuda;Ho bisogno di aiuto
+7;Emergenze e necessità;Hablas espanol;Parli spagnolo
+8;Emergenze e necessità;No hablo italiano;Non parlo italiano
+1;Colori;rojo;rosso
+2;Colori;azul;blu
+3;Colori;verde;verde
+4;Colori;amarillo;giallo
+5;Colori;negro;nero
+6;Colori;blanco;bianco
+7;Colori;naranja;arancione
+8;Colori;rosa;rosa
+9;Colori;gris;grigio
+1;Aggettivi - Stati ed emozioni;cansado;stanco
+2;Aggettivi - Stati ed emozioni;feliz;felice
+3;Aggettivi - Stati ed emozioni;contento;contento
+4;Aggettivi - Stati ed emozioni;triste;triste
+5;Aggettivi - Stati ed emozioni;enfermo;malato
+6;Aggettivi - Stati ed emozioni;enojado;arrabbiato
+7;Aggettivi - Stati ed emozioni;aburrido;annoiato
+8;Aggettivi - Stati ed emozioni;preocupado;preoccupato
+9;Aggettivi - Stati ed emozioni;ocupado;occupato
+10;Aggettivi - Stati ed emozioni;tranquilo;tranquillo
+11;Aggettivi - Stati ed emozioni;listo / preparado;pronto
+1;Aggettivi - Qualità e descrizione;grande;grande
+2;Aggettivi - Qualità e descrizione;pequeno;piccolo
+3;Aggettivi - Qualità e descrizione;nuevo;nuovo
+4;Aggettivi - Qualità e descrizione;viejo (cosa);vecchio
+5;Aggettivi - Qualità e descrizione;bueno;buono
+6;Aggettivi - Qualità e descrizione;malo;cattivo
+7;Aggettivi - Qualità e descrizione;facil;facile
+8;Aggettivi - Qualità e descrizione;dificil;difficile
+9;Aggettivi - Qualità e descrizione;importante;importante
+10;Aggettivi - Qualità e descrizione;caro;caro
+11;Aggettivi - Qualità e descrizione;barato;economico
+12;Aggettivi - Qualità e descrizione;bonito / lindo;carino
+1;Aggettivi - Sensazioni e stato delle cose;caliente;caldo
+2;Aggettivi - Sensazioni e stato delle cose;frio;freddo
+3;Aggettivi - Sensazioni e stato delle cose;lleno;pieno
+4;Aggettivi - Sensazioni e stato delle cose;vacio;vuoto
+5;Aggettivi - Sensazioni e stato delle cose;limpio;pulito
+6;Aggettivi - Sensazioni e stato delle cose;sucio;sporco
+7;Aggettivi - Sensazioni e stato delle cose;abierto;aperto
+8;Aggettivi - Sensazioni e stato delle cose;cerrado;chiuso
+1;Aggettivi - Aspetto fisico;alto;alto
+2;Aggettivi - Aspetto fisico;bajo;basso
+3;Aggettivi - Aspetto fisico;guapo / bonito;bello
+4;Aggettivi - Aspetto fisico;feo;brutto
+5;Aggettivi - Aspetto fisico;gordo;grasso
+6;Aggettivi - Aspetto fisico;delgado;magro
+7;Aggettivi - Aspetto fisico;joven;giovane
+8;Aggettivi - Aspetto fisico;viejo (persona);anziano
+9;Aggettivi - Aspetto fisico;fuerte;forte
+10;Aggettivi - Aspetto fisico;debil;debole
