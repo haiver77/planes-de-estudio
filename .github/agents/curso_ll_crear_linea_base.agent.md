@@ -15,15 +15,17 @@ Usa los datos que proporcione el usuario:
 - Ubicación o mecanismo para consultar el vocabulario foco.
 - Criterio de separación en unidades.
 - Nivel del curso.
+- Cantidad de frases por vocabulario.
+- Cantidad máxima de agentes `curso_ll_generar_csvs` en paralelo.
 - Consideraciones específicas.
 
-Si falta un dato indispensable, solicítalo. Antes de modificar archivos, valida que el origen del vocabulario sea accesible, legible y permita identificar sin ambigüedad cada elemento foco. Si no puedes consultarlo o interpretarlo, explica el motivo y detente sin crear ni modificar artefactos del curso.
+La cantidad de frases y el máximo de agentes paralelos se conservan como valores de entrada en `source_prompt.md`; no cambian el procedimiento de línea base. Si falta un dato de entrada necesario para registrar la creación inicial, solicítalo. Antes de modificar archivos, valida que el origen del vocabulario sea accesible, legible y permita identificar sin ambigüedad cada elemento foco. Si no puedes consultarlo o interpretarlo, explica el motivo y detente sin crear ni modificar artefactos del curso.
 
 ## Procedimiento
 
 1. Consulta el origen y conserva exactamente el orden de los elementos foco. Si es un CSV, identifica su columna de vocabulario y si tiene encabezado; no trates el encabezado como vocabulario. Si hay varias columnas candidatas o el formato es ambiguo, pregunta antes de continuar. No elimines duplicados ni normalices el texto de los elementos sin autorización.
 2. Usa `Courses/<id-del-curso>/` dentro del workspace como raíz. Deriva un nombre de carpeta seguro a partir del nombre del curso, o usa el identificador que proporcione el usuario. Rechaza rutas absolutas, `..` y nombres que salgan de `Courses/`; pide aclaración si el identificador no es seguro.
-3. Comprueba si el curso ya existe. Si no existe, crea la estructura requerida. Si existe, inspecciona los artefactos pertinentes y deduce el cambio concreto solicitado; conserva todo lo que no sea necesario cambiar. Si las instrucciones no aclaran qué modificar, pregunta. Nunca recrees el curso desde cero ni borres archivos existentes como estrategia de actualización.
+3. Comprueba si el curso ya existe. Si no existe, crea la estructura requerida y `source_prompt.md` en la raíz del curso. El archivo debe registrar todos los valores de entrada usados para esta creación, en una lista Markdown con etiquetas en negrita seguidas de dos puntos, en este orden: `Nombre del curso`, `Idioma nativo`, `idioma destino`, `Vocabulario foco`, `Criterio para dividirlo en unidades`, `Nivel`, `Cantidad de frases por vocabulario`, `Consideraciones específicas` y `Cantidad de agentes generador csv paralelos`. Conserva literalmente los valores proporcionados por el usuario (en especial el criterio multilínea); no los resumas, traduzcas ni infieras. Si el curso existe, inspecciona los artefactos pertinentes y deduce el cambio concreto solicitado; conserva todo lo que no sea necesario cambiar. Si ya existe `source_prompt.md`, no lo sobrescribas. Si no existe, no inventes un registro histórico a partir de los datos de una actualización. Si las instrucciones no aclaran qué modificar, pregunta. Nunca recrees el curso desde cero ni borres archivos existentes como estrategia de actualización.
 4. Interpreta el criterio de separación literalmente y en el orden de origen. Admite cantidades por unidad y rangos explícitos. Si no se puede aplicar inequívocamente (por ejemplo, un criterio que deja elementos sin asignar), pide aclaración. Si la última unidad queda incompleta, asígnale los elementos restantes. Nombra las unidades consecutivamente `Unit_1`, `Unit_2`, etc.
 5. Crea o actualiza `course_vocabulary_focus_by_unit.csv` con dos columnas y encabezado `vocabulary_focus;unit`. Usa `Unit_N` en la segunda columna, conserva cada elemento foco sin cambios y escapa los valores conforme al formato CSV cuando sea necesario. Mantén el orden del origen.
 6. Crea las carpetas `Units/Unit_N/Lessons/` para las unidades resultantes, sin eliminar carpetas ni lecciones preexistentes.
@@ -58,9 +60,10 @@ Si falta un dato indispensable, solicítalo. Antes de modificar archivos, valida
 ## Límites
 
 - No generes, muevas ni borres CSV de lecciones.
+- `source_prompt.md` se crea solo al crear un curso nuevo; en cursos existentes, consérvalo y no reconstruyas un prompt inicial que no esté disponible.
 - No inventes vocabulario ni datos del curso que no hayan sido proporcionados o verificables.
 - No informes éxito si la fuente no pudo leerse o si la separación no cubre todos los elementos.
 
 ## Resultado
 
-Informa la ruta del curso, cantidad de elementos foco, unidades creadas o actualizadas y archivos modificados. Indica cualquier supuesto, duplicado detectado o bloqueo.
+Informa la ruta del curso, cantidad de elementos foco, unidades creadas o actualizadas y archivos modificados, incluido `source_prompt.md` cuando corresponda. Indica cualquier supuesto, duplicado detectado o bloqueo.

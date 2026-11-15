@@ -103,13 +103,15 @@ Courses/
 - Ubicación o mecanismo para conseguir el `vocabulario foco`
 - `Criterio separación unidades`
 - `Nivel curso`
+- `Cantidad de frases por vocabulario`
+- `Cantidad máxima de agentes curso_ll_generar_csvs en paralelo`
 - `Consideraciones especificas`
 
 ### Procedimiento
 1. Validar que el `vocabulario foco` se pueda consultar apropiadamente. Si el `vocabulario foco` no se puede consultar, informar al usuario el motivo y detener toda la ejecución (no continuar con ningún paso posterior).
 2. Verificar si la carpeta del curso ya existe dentro de `Courses/`:
-   - Si **no existe**, crear las carpetas y subcarpetas de la `estructura curso` y continuar con el flujo de creación normal (pasos 3 en adelante).
-   - Si **ya existe**, no recrear el curso desde cero. En su lugar, revisar cuidadosamente las indicaciones y `Consideraciones especificas` que está dando el usuario para determinar cuál es el cambio, ajuste, mejora o modificación que desea realizar sobre la línea base del curso existente, y aplicar únicamente ese cambio sobre los artefactos correspondientes.
+   - Si **no existe**, crear las carpetas y subcarpetas de la `estructura curso`, y guardar en la raíz `source_prompt.md` con todos los valores de entrada iniciales, incluidos la cantidad de frases y el máximo de agentes paralelos. Conservar literalmente los valores del usuario y las instrucciones multilínea; no resumirlos ni inferirlos.
+   - Si **ya existe**, no recrear el curso desde cero. En su lugar, revisar cuidadosamente las indicaciones y `Consideraciones especificas` que está dando el usuario para determinar cuál es el cambio, ajuste, mejora o modificación que desea realizar sobre la línea base del curso existente, y aplicar únicamente ese cambio sobre los artefactos correspondientes. No sobrescribir un `source_prompt.md` existente ni generar uno nuevo a partir de los datos de una actualización, pues no representan necesariamente el prompt de creación inicial.
 3. Determinar cuántos `vocabulario foco` hay en total.
 4. Conservando el orden en el que se encuentra el origen del `vocabulario foco`, crear el archivo `course_vocabulary_focus_by_unit.csv` que contenga la lista del `vocabulario foco` (primera columna) y la unidad a la que pertenece (segunda columna), haciendo la separación en unidades según el `Criterio separación unidades` indicado en los datos de entrada. El agente debe interpretar el criterio ingresado por el usuario (por ejemplo, una cantidad fija por unidad o rangos explícitos de vocabulario por unidad) y aplicarlo respetando el orden del origen. Si al aplicar el criterio la última unidad queda con menos `vocabulario foco` del que normalmente contendría, dejarla incompleta con el `vocabulario foco` que falte.
 5. Crear la subcarpeta de cada unidad (`Units/Unit_N/` y su carpeta `Lessons/`) según la cantidad de unidades resultante de la separación anterior.
@@ -119,6 +121,7 @@ Courses/
 
 ### Salida
 - La `estructura curso` creada con sus carpetas y subcarpetas.
+- El archivo `source_prompt.md` en la raíz del curso cuando se crea un curso nuevo.
 - El archivo `course_vocabulary_focus_by_unit.csv` con la separación del `vocabulario foco` por unidad.
 - Los archivos `course_details.json` y `unit_details.json` creados con información dummy cuando no haya información real todavía.
 
@@ -138,7 +141,7 @@ Courses/
 1. Leer el archivo 'catalogo_de_instrucciones.md' para tener el contexto de qué instrucciones se deberían usar para generar los CSVs dependiendo del tipo de `vocabulario foco`.
 2. Lee las `Consideraciones especificas` (Si hay).
 3. Leer el archivo 'course_vocabulary_focus_by_unit.csv' correspondiente al `Nombre curso` actual, y genera los CSVs por cada vocabulario del `vocabulario foco` que contiene, escribiendo los archivos csv dentro de la carpeta "/Lessons/" de la Unidad "/Unit_" correspondiente según la unidad indicada para el `vocabulario foco`.
-4. Luego de completar la generación de CSV de una unidad, identifica cuáles palabras individuales únicas aparte del `vocabulario foco` hay en todos los CSVs de la unidad, y añade esta lista de estas palabras en el archivo 'course_vocabulary_complementary_by_unit.csv'. Al excluir el vocabulario foco, excluye también sus formas con artículo italiano elidido unido por apóstrofo (por ejemplo, `articolo` y `l'articolo` son el mismo vocabulario para esta exclusión). Este archivo debe estar ordenado por unidades.
+4. Luego de completar la generación de los CSV de las unidades, extrae las palabras individuales de la segunda columna de cada lección y añade al archivo `course_vocabulary_complementary_by_unit.csv` únicamente las palabras que no aparezcan en ninguno de los vocabularios foco de esa unidad. La exclusión se hace por palabra, no solo comparando la frase completa: si el foco es `Let's call it a day`, excluye `Let's`, `call`, `it`, `a` y `day` del vocabulario complementario de esa unidad, incluso cuando aparezcan en frases de contexto. No excluyas vocabulario foco de otras unidades. Al comparar, trata como equivalentes las formas con artículo italiano elidido unido por apóstrofo (por ejemplo, `articolo` y `l'articolo`), reconociendo apóstrofos rectos y tipográficos. Deduplica las palabras restantes sin distinguir mayúsculas/minúsculas y ordena el archivo por unidades.
 
 
 
@@ -166,6 +169,6 @@ Basado en la información de entrada
 3. Leer `course_vocabulary_focus_by_unit.csv`, validar sus filas y obtener las unidades distintas en orden.
 4. Calcular el número de trabajadores como el menor entre el máximo indicado por el usuario y el total de unidades. Repartir las unidades, en orden, en colas exclusivas y equilibradas. Iniciar un agente `curso_ll_generar_csvs` en modo `unit-queue` por cada cola, transmitiendo la cantidad de frases por vocabulario y todos los datos del curso. Cada agente genera exactamente esa cantidad de frases por vocabulario, procesa una unidad a la vez y, tras validarla, continúa con la siguiente unidad pendiente de su propia cola. No se crean agentes nuevos por cada unidad ni se permite que dos trabajadores escriban en la misma carpeta `Lessons/`.
 5. Esperar a que terminen todos los agentes. Si alguno informa bloqueo o no valida todas las lecciones de su cola, detener el flujo sin agregar vocabulario complementario ni actualizar conteos; informar qué unidades terminaron, cuáles quedaron incompletas o pendientes y esperar a los demás trabajadores activos.
-6. Solo cuando todas las unidades terminen correctamente, invocar una vez `curso_ll_generar_csvs` en modo `aggregate-complementary`, transmitiendo los mismos datos del curso, incluida la cantidad de frases por vocabulario. Debe confiar en las validaciones completadas por unidad y extraer mecánicamente el vocabulario de las lecciones para crear o actualizar `course_vocabulary_complementary_by_unit.csv`, sin regenerar ni volver a validar globalmente las lecciones.
+6. Solo cuando todas las unidades terminen correctamente, invocar una vez `curso_ll_generar_csvs` en modo `aggregate-complementary`, transmitiendo los mismos datos del curso, incluida la cantidad de frases por vocabulario. Debe confiar en las validaciones completadas por unidad y extraer mecánicamente el vocabulario de las lecciones para crear o actualizar `course_vocabulary_complementary_by_unit.csv`. La exclusión es por palabra y por unidad: no incluir ninguna palabra que aparezca en cualquier vocabulario foco de esa unidad, aunque pertenezca a una frase de varias palabras (por ejemplo, para `Let's call it a day`, no incluir `Let's`, `call`, `it`, `a` ni `day`). Considerar equivalentes las formas con artículo italiano elidido unido por apóstrofo. No regenerar ni volver a validar globalmente las lecciones.
 7. Esperar a que el agente confirme que el CSV complementario quedó completo y validado. Si hay bloqueo, no actualizar los conteos finales.
 8. Leer y validar `course_vocabulary_focus_by_unit.csv` y `course_vocabulary_complementary_by_unit.csv`; contar sus registros de datos, excluyendo encabezados, tanto globalmente como por unidad. Tras validar también los JSON existentes, actualizar únicamente `focusVocabularyCount` y `supplementaryVocabularyCount` en `course_details.json` con los totales de los CSV y los mismos dos campos en cada `Units/Unit_N/unit_details.json` con sus conteos por unidad. Unidades sin filas complementarias reciben `supplementaryVocabularyCount: 0`. Conservar todos los demás campos JSON y verificar cada valor contra las filas fuente; si los archivos o filas no son válidos, no actualizar conteos.

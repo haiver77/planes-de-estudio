@@ -3,6 +3,21 @@ param(
     [string]$CoursePath
 )
 
+function Get-ComparableVocabularyToken {
+    param([string]$RawToken)
+
+    $token = [System.Text.RegularExpressions.Regex]::Replace(
+        $RawToken,
+        '^[\p{P}\p{S}]+|[\p{P}\p{S}]+$',
+        ''
+    )
+    if (-not $token -or $token -match '^\p{N}+$') {
+        return $null
+    }
+
+    return $token -replace "(?i)^(?:l|un)['\u2018\u2019]", ''
+}
+
 $courseRoot = (Resolve-Path -LiteralPath $CoursePath).Path
 $focusPath = Join-Path $courseRoot "course_vocabulary_focus_by_unit.csv"
 $unitsRoot = Join-Path $courseRoot "Units"
@@ -25,7 +40,12 @@ for ($lineNumber = 1; $lineNumber -lt $focusLines.Length; $lineNumber++) {
     if (-not $focusByUnit.ContainsKey($unitName)) {
         $focusByUnit[$unitName] = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
     }
-    [void]$focusByUnit[$unitName].Add($focusWord)
+    foreach ($rawToken in ($focusWord -split '\s+')) {
+        $comparableToken = Get-ComparableVocabularyToken -RawToken $rawToken
+        if ($comparableToken) {
+            [void]$focusByUnit[$unitName].Add($comparableToken)
+        }
+    }
 
     if ($knownUnits.Add($unitName)) {
         $unitOrder.Add($unitName)
@@ -61,12 +81,12 @@ foreach ($unitName in $unitOrder) {
                     '^[\p{P}\p{S}]+|[\p{P}\p{S}]+$',
                     ''
                 )
-                if (-not $token -or $token -match '^\p{N}+$') {
+                $comparableToken = Get-ComparableVocabularyToken -RawToken $rawToken
+                if (-not $comparableToken) {
                     continue
                 }
 
-                $focusCandidate = $token -replace "^(?:l|un)['\u2019]", ''
-                if ($focusByUnit[$unitName].Contains($token) -or $focusByUnit[$unitName].Contains($focusCandidate)) {
+                if ($focusByUnit[$unitName].Contains($comparableToken)) {
                     continue
                 }
 
