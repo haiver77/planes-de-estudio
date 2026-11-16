@@ -28,14 +28,23 @@ $unitOrder = [System.Collections.Generic.List[string]]::new()
 $knownUnits = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
 $focusLines = [System.IO.File]::ReadAllLines($focusPath, [System.Text.Encoding]::UTF8)
 
-for ($lineNumber = 1; $lineNumber -lt $focusLines.Length; $lineNumber++) {
-    $fields = $focusLines[$lineNumber].Split(';', 2)
-    if ($fields.Length -ne 2) {
-        throw "No se puede leer la fila $($lineNumber + 1) de $focusPath."
-    }
+$expectedFocusHeader = "unit;vocabulary_focus;native"
+if ($focusLines.Length -eq 0 -or $focusLines[0].TrimStart([char]0xFEFF) -ne $expectedFocusHeader) {
+    throw "El encabezado de $focusPath debe ser '$expectedFocusHeader'."
+}
 
-    $focusWord = $fields[0].Trim()
-    $unitName = $fields[1].Trim()
+$focusRows = @($focusLines | ConvertFrom-Csv -Delimiter ';')
+if ($focusRows.Count -ne ($focusLines.Length - 1)) {
+    throw "No se pudieron leer todas las filas de $focusPath."
+}
+
+for ($rowIndex = 0; $rowIndex -lt $focusRows.Count; $rowIndex++) {
+    $focusRow = $focusRows[$rowIndex]
+    $unitName = ([string]$focusRow.unit).Trim()
+    $focusWord = ([string]$focusRow.vocabulary_focus).Trim()
+    if ($unitName -notmatch '^Unit_\d+$' -or -not $focusWord -or -not ([string]$focusRow.native).Trim()) {
+        throw "La fila $($rowIndex + 2) de $focusPath contiene una unidad, vocabulario o traducción nativa inválidos."
+    }
 
     if (-not $focusByUnit.ContainsKey($unitName)) {
         $focusByUnit[$unitName] = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
@@ -60,7 +69,7 @@ $unitOrder.Sort([System.Comparison[string]]{
 })
 
 $rows = [System.Collections.Generic.List[string]]::new()
-$rows.Add("vocabulary_complementary;unit")
+$rows.Add("unit;vocabulary_complementary;native")
 
 foreach ($unitName in $unitOrder) {
     $lessonsPath = Join-Path (Join-Path $unitsRoot $unitName) "Lessons"
@@ -91,7 +100,11 @@ foreach ($unitName in $unitOrder) {
                 }
 
                 if ($seenWords.Add($token)) {
-                    $rows.Add("$token;$unitName")
+                    $escapedToken = $token.Replace('"', '""')
+                    if ($escapedToken.Contains(';') -or $escapedToken.Contains('"') -or $escapedToken.Contains("`n") -or $escapedToken.Contains("`r")) {
+                        $escapedToken = '"' + $escapedToken + '"'
+                    }
+                    $rows.Add("$unitName;$escapedToken;")
                 }
             }
         }
